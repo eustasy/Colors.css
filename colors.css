@@ -41,10 +41,7 @@
 .background-pomegranate { background: #C0392B; }
 
 /* White - Grey - Black */
-.background-clouds {
-	background: #ECF0F1;
-	color: #bdc3c7;
-}
+.background-clouds { background: #ECF0F1; }
 .background-silver { background: #BDC3C7; }
 .background-concrete { background: #95A5A6; }
 .background-asbestos { background: #7F8C8D; }
