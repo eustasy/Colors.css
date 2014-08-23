@@ -8,6 +8,10 @@
 
 /* Backgrounds */
 
+/* Baseline */
+.background-inherit { background: inherit }
+.background-transparent { background: transparent; }
+
 /* Turquoise */
 .background-turquoise { background: #1ABC9C; }
 .background-green-sea { background: #16A085; }
@@ -49,6 +53,10 @@
 
 
 /* Colors */
+
+/* Baseline */
+.color-inherit { color: inherit }
+.color-transparent { color: transparent; }
 
 /* Turquoise */
 .color-turquoise { color: #1ABC9C; }
