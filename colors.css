@@ -51,6 +51,25 @@
 .background-concrete { background: #95A5A6; }
 .background-asbestos { background: #7F8C8D; }
 
+/* White - Grey - Black */
+.background-f, .background-white { background: #fff; }
+.background-d { background: #ddd; }
+.background-e { background: #eee; }
+.background-c { background: #ccc; }
+.background-b { background: #bbb; }
+.background-a { background: #aaa; }
+.background-9, .background-nine { background: #999; }
+.background-8, .background-eight { background: #888; }
+.background-7, .background-seven { background: #777; }
+.background-6, .background-six { background: #666; }
+.background-5, .background-five { background: #555; }
+.background-4, .background-four { background: #444; }
+.background-3, .background-three { background: #333; }
+.background-2, .background-two { background: #222; }
+.background-1, .background-one { background: #111; }
+.background-0, .background-zero, .background-black { background: #000; }
+
+
 
 
 /* Colors */
