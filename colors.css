@@ -2,7 +2,7 @@
 /* Colors from http://flatuicolors.com/ */
 /* $ Backgrounds */
 /* Baseline */
-.background-inherit { background: inherit }
+.background-inherit { background: inherit; }
 .background-transparent { background: transparent; }
 /* Turquoise */
 .background-turquoise { background: #1abc9c; }
@@ -64,7 +64,7 @@
 .background-black { background: #000000; }
 /* $ Colors */
 /* Baseline */
-.color-inherit { color: inherit }
+.color-inherit { color: inherit; }
 .color-transparent { color: transparent; }
 /* Turquoise */
 .color-turquoise { color: #1abc9c; }
@@ -83,7 +83,7 @@
 .color-midnight-blue { color: #2c3e50; }
 /* Yellow */
 .color-sun-flower { color: #f1c40f; }
-.color-orange { color: #f39C12; }
+.color-orange { color: #f39c12; }
 /* Orange */
 .color-carrot { color: #e67e22; }
 .color-pumpkin { color: #d35400; }
