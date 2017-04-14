@@ -36,8 +36,8 @@
 /* White - Grey - Black */
 .background-f,
 .background-white { background: #ffffff; }
-.background-d { background: #dddddd; }
 .background-e { background: #eeeeee; }
+.background-d { background: #dddddd; }
 .background-c { background: #cccccc; }
 .background-b { background: #bbbbbb; }
 .background-a { background: #aaaaaa; }
@@ -98,8 +98,8 @@
 /* White - Grey - Black */
 .color-f,
 .color-white { color: #ffffff; }
-.color-d { color: #dddddd; }
 .color-e { color: #eeeeee; }
+.color-d { color: #dddddd; }
 .color-c { color: #cccccc; }
 .color-b { color: #bbbbbb; }
 .color-a { color: #aaaaaa; }
