@@ -1,3 +1,4 @@
+/*global $*/
 $(function() {
 	$.getJSON('colors.json', function( data ) {
 		var css = '/*! Colors.css 1.8 | MIT License | https://github.com/eustasy/colors.css */\n'
