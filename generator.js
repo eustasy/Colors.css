@@ -7,6 +7,11 @@ $(function() {
 			//console.log(group + ': ' + list)
 			css += '/* $$ ' + group + ' */\n'
 			css += '/* $ Backgrounds */\n'
+			if ( group == 'Baseline' ) {
+				group = ''
+			} else {
+				group = group.replace(/\s+/g, '-').toLowerCase()
+			}
 			$.each( list, function( key, val ) {
 				//console.log(key + ': ' + val)
 				css += '.background-' + key.replace(/\s+/g, '-').toLowerCase() + ' { background: ' + val.toLowerCase() + '; }\n'
