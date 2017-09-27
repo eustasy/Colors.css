@@ -6,7 +6,8 @@
 [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=4691114)](https://www.bountysource.com/teams/eustasy/issues?tracker_ids=4691114)
 [![](https://data.jsdelivr.com/v1/package/gh/eustasy/colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
-A colors stylesheet for backgrounds and fonts with the colors from lots of places  
+A colors stylesheet.
+
 Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/colors.css@1.9.0/colors.min.css" integrity="sha384-pWGY9imDZXM9+D1AZXDCrFl8tfgQhgjSgmkcZ3jSaAwEipFXu4vksaSVjHYlqT6Q" crossorigin="anonymous">`
