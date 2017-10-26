@@ -14,7 +14,7 @@ $(function() {
 			var typeIndex
 			var types = ['background', 'color', 'fill']
 			for (typeIndex = 0; typeIndex < types.length; ++typeIndex) {
-				css += '/* $ ' + types[typeIndex].charAt(0).toUpperCase() + types[typeIndex].slice(1); + 's */\n'
+				css += '/* $ ' + types[typeIndex].charAt(0).toUpperCase() + types[typeIndex].slice(1) + 's */\n'
 				$.each( list, function( key, val ) {
 					//console.log(key + ': ' + val)
 					css += '.' + types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase() + ' { background: ' + val.toLowerCase() + '; }\n'
