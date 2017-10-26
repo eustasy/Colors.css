@@ -6,7 +6,6 @@ $(function() {
 		$.each( data, function( group, list ) {
 			//console.log(group + ': ' + list)
 			css += '/* $$ ' + group + ' */\n'
-			css += '/* $ Backgrounds */\n'
 			if ( group == 'Baseline' ) {
 				group = ''
 			} else {
