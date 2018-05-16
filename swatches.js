@@ -1,8 +1,8 @@
 /*global $*/
+var swatches = ''
 $(function() {
 	$.getJSON('colors.json', function( data ) {
 		//console.log(data)
-		swatches = ''
 		$.each( data, function( group, list ) {
 			//console.log(group + ': ' + list)
 			swatches += '<section class="whole grid">'
@@ -20,7 +20,7 @@ $(function() {
 				swatches += types[typeIndex].charAt(0).toUpperCase() + types[typeIndex].slice(1) + '</h3>'
 				$.each( list, function( key, val ) {
 					//console.log(key + ': ' + val)
-					name = types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase()
+					var name = types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase()
 					swatches += '<div class="css-colors-box ' + name + '">' + name + '</div>'
 				})
 				swatches += '</div>'
