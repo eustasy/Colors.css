@@ -17,7 +17,10 @@ $(function() {
 				css += '/* $ ' + types[typeIndex].charAt(0).toUpperCase() + types[typeIndex].slice(1) + 's */\n'
 				$.each( list, function( key, val ) {
 					//console.log(key + ': ' + val)
-					css += '.' + types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase() + ' { background: ' + val.toLowerCase() + '; }\n'
+					// .color-elementary-orange
+					css += '.' + types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase()
+					// { color: #f37329; }
+					css += ' { ' + types[typeIndex] + ': ' + val.toLowerCase() + '; }\n'
 				})
 			}
 		})
