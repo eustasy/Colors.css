@@ -10,4 +10,4 @@ A colors stylesheet.
 
 Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/colors.css@1.9.0/colors.min.css" integrity="sha384-pWGY9imDZXM9+D1AZXDCrFl8tfgQhgjSgmkcZ3jSaAwEipFXu4vksaSVjHYlqT6Q" crossorigin="anonymous">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@1.9.3/colors.min.css" integrity="sha256-GlJ7miiaqNfvl6Ib75PpJGxc6Hl352RZN1LVidxEewI=" crossorigin="anonymous">`
