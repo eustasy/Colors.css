@@ -1,7 +1,7 @@
 /*global $*/
 $(function() {
 	$.getJSON('colors.json', function( data ) {
-		var css = '/*! Colors.css 1.9.0 | MIT License | https://github.com/eustasy/colors.css */\n'
+		var css = '/*! Colors.css 1.9.3 | MIT License | https://github.com/eustasy/colors.css */\n'
 		//console.log(data)
 		$.each( data, function( group, list ) {
 			//console.log(group + ': ' + list)
