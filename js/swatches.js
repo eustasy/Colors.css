@@ -1,7 +1,7 @@
 /*global $*/
 var swatches = ''
 $(function() {
-	$.getJSON('colors.json', function( data ) {
+	$.getJSON('../data/colors.json', function( data ) {
 		//console.log(data)
 		$.each( data, function( group, list ) {
 			//console.log(group + ': ' + list)
