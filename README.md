@@ -6,8 +6,14 @@
 [![Code Climate](https://codeclimate.com/github/eustasy/colors.css/badges/gpa.svg)](https://codeclimate.com/github/eustasy/colors.css)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/eustasy/Colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/Colors.css)
 
-A colors stylesheet.
+A selection of colors stylesheets, with backgrounds and fills too.
 
-Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
+---
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@1.9.3/colors.min.css" integrity="sha256-GlJ7miiaqNfvl6Ib75PpJGxc6Hl352RZN1LVidxEewI=" crossorigin="anonymous">`
+Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/Colors.css)
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous">`
+
+Not auto-updated, but with Sub-Resource Integrity.
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2.0.1/colors.min.css" integrity="sha384-uefan8qr7pcLgmO2hlCzS2SGV0XUPpA9x5y3J3Wd2EIzpyTYz/GMN+xyLyNGmpOj" crossorigin="anonymous">`
