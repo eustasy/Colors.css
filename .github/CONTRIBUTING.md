@@ -8,6 +8,7 @@
 - New data files for palettes must be added to `data/index.json` in the format: `"Palette Title": palette-slug,`
 
 ### Python (.py)
+- Utilities go in `utils`
 - Follow Pythons own style guidelines.
 
 ### CSS
