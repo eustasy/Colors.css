@@ -5,7 +5,7 @@ import os
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
 types = ['background', 'color', 'fill']
-version = '1.9.3'
+version = '2.0.0-beta'
 css_all = ''
 
 #   Step 1. Load index.json
