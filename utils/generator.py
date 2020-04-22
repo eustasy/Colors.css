@@ -51,7 +51,7 @@ css_min = css_all_title + re.sub(r'[\s\n;]+', '', css_all).lower()
 css_all = css_all_title + css_all
 
 with open(path + '/../colors.css', 'w+') as outfile:
-    outfile.write(css)
+    outfile.write(css_all)
 
 with open(path + '/../colors.min.css', 'w+') as outfile:
     outfile.write(css_min)
