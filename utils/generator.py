@@ -11,7 +11,7 @@ f = open(path + '/../data/index.json')
 index = json.load(f)
 f.close()
 
-for title, slug in index:
+for title, slug in index.items():
     css_title = '/*! Colors.css 1.9.3 | ' + title + ' Palette | MIT License | https://github.com/eustasy/colors.css */\n'
     css = ''
 
@@ -23,7 +23,7 @@ for title, slug in index:
     f.close()
 
     for type in types:
-        for color, hex in colors:
+        for color, hex in colors.items():
             # Should look like .color-elementary-orange
             css += '.' + type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
             # Should look like { color: #f37329; }
