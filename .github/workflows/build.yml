@@ -32,6 +32,6 @@ jobs:
         echo "Git credentials configured."
         git checkout v2
         git add .
-        git commit -m "Automatic build of CSS from data" && git push --set-upstream origin master || true
+        git commit -m "Automatic build of CSS from data" && git push --set-upstream origin v2 || true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
