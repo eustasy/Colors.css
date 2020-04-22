@@ -1,11 +1,13 @@
 import json
 import re
+import os
 
+path = os.path.dirname(os.path.abspath(__file__))
 types = ['background', 'color', 'fill']
 css_all_title = '/*! Colors.css 1.9.3 | All Palettes | MIT License | https://github.com/eustasy/colors.css */\n'
 css_all = ''
 
-f = open('../data/index.json')
+f = open(path + '/../data/index.json')
 index = json.load(f)
 f.close()
 
@@ -16,7 +18,7 @@ for title, slug in index:
     # Not needed as index contains this already.
     # slug = re.sub('\s+', '-', title).lower()
 
-    f = open('../data/' + slug + '.json')
+    f = open(path + '/../data/' + slug + '.json')
     colors = json.load(f)
     f.close()
 
@@ -32,8 +34,8 @@ for title, slug in index:
     css_min = css_title + re.sub('\n+', '', css).lower()
     css = css_title + css
 
-    with open('../' + slug + '.css', 'w+') as outfile:
+    with open(path + '/../' + slug + '.css', 'w+') as outfile:
         outfile.write(css)
 
-    with open('../' + slug + '.min.css', 'w+') as outfile:
+    with open(path + '/../' + slug + '.min.css', 'w+') as outfile:
         outfile.write(css_min)
