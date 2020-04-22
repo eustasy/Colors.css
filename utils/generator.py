@@ -31,7 +31,7 @@ for title, slug in index.items():
 
 
     css_all += css
-    css_min = css_title + re.sub('\n+', '', css).lower()
+    css_min = css_title + re.sub('\s\n+', '', css).lower()
     css = css_title + css
 
     with open(path + '/../' + slug + '.css', 'w+') as outfile:
