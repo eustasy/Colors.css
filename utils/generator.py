@@ -4,7 +4,7 @@ import os
 
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
-types = ['-', 'background', 'color', 'fill']
+types = ['-', '.background', '.color', '.fill']
 version = '2.0.2'
 css_all = ''
 
@@ -29,7 +29,7 @@ for title, slug in index.items():
     for type in types:
         for color, hex in colors.items():
             # Should look like .color-elementary-orange
-            css += '.' + type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
+            css += type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
             # Should look like { color: #f37329; }
             css += ' { ' + type + ': ' + hex.lower() + '; }\n'
 
