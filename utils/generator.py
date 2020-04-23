@@ -4,7 +4,7 @@ import os
 
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
-types = ['-', '.background', '.color', '.fill']
+types = ['background', 'color', 'fill']
 version = '2.0.2'
 css_all = ''
 
@@ -25,15 +25,20 @@ for title, slug in index.items():
     colors = json.load(f)
     f.close()
 
-    #   Step 2. b) Load palette data
+    #   Step 2. b) Create CSS variables for each color
+    for color, hex in colors.items():
+        # Should look like --elementary-orange: #f37329;
+        css += '--' + slug + '-' + re.sub('\s+', '-', color).lower() + hex.lower() + ';\n'
+
+    #   Step 2. c) Create CSS types for each color
     for type in types:
         for color, hex in colors.items():
             # Should look like .color-elementary-orange
-            css += type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
+            css += '.' + type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
             # Should look like { color: #f37329; }
             css += ' { ' + type + ': ' + hex.lower() + '; }\n'
 
-    #   Step 2. c) Put data into palette.css files
+    #   Step 2. d) Put data into palette.css files
     css_all += css
     css_title = '/*! Colors.css ' + version + ' | ' + title + ' Palette | MIT License | https://github.com/eustasy/colors.css */\n'
     css_min = css_title + re.sub(r'[\s\n;]+', '', css).lower()
