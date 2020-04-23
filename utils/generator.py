@@ -43,7 +43,7 @@ for title, slug in index.items():
     #   Step 2. d) Put data into palette.css files
     css_all += css
     css_title = '/*! Colors.css ' + version + ' | ' + title + ' Palette | MIT License | https://github.com/eustasy/colors.css */\n'
-    css_min = css_title + re.sub(r'[\s\n;]+', '', css).lower()
+    css_min = css_title + re.sub(r'[\s\n]+', '', css).lower()
     css = css_title + css
 
     with open(path + '/../' + slug + '.css', 'w+') as outfile:
@@ -54,7 +54,7 @@ for title, slug in index.items():
 
 #   Step 3. Combine and minify into main files
 css_all_title = '/*! Colors.css ' + version + ' | All Palettes | MIT License | https://github.com/eustasy/colors.css */\n'
-css_min = css_all_title + re.sub(r'[\s\n;]+', '', css_all).lower()
+css_min = css_all_title + re.sub(r'[\s\n]+', '', css_all).lower()
 css_all = css_all_title + css_all
 
 with open(path + '/../colors.css', 'w+') as outfile:
