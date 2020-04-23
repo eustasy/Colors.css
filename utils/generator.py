@@ -4,7 +4,7 @@ import os
 
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
-types = ['background', 'color', 'fill']
+types = ['-', 'background', 'color', 'fill']
 version = '2.0.2'
 css_all = ''
 
