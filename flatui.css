@@ -1,24 +1,26 @@
 /*! Colors.css 2.0.2 | Flat UI Palette | MIT License | https://github.com/eustasy/colors.css */
---flatui-turquoise: #1abc9c;
---flatui-green-sea: #16a085;
---flatui-emerald: #2ecc71;
---flatui-nephritis: #27ae60;
---flatui-peter-river: #3498db;
---flatui-belize-hole: #2980b9;
---flatui-amethyst: #9b59b6;
---flatui-wisteria: #8e44ad;
---flatui-wet-asphalt: #34495e;
---flatui-midnight-blue: #2c3e50;
---flatui-sun-flower: #f1c40f;
---flatui-orange: #f39c12;
---flatui-carrot: #e67e22;
---flatui-pumpkin: #d35400;
---flatui-alizarin: #e74c3c;
---flatui-pomegranate: #c0392b;
---flatui-clouds: #ecf0f1;
---flatui-silver: #bdc3c7;
---flatui-concrete: #95a5a6;
---flatui-asbestos: #7f8c8d;
+:root {
+	--flatui-turquoise: #1abc9c;
+	--flatui-green-sea: #16a085;
+	--flatui-emerald: #2ecc71;
+	--flatui-nephritis: #27ae60;
+	--flatui-peter-river: #3498db;
+	--flatui-belize-hole: #2980b9;
+	--flatui-amethyst: #9b59b6;
+	--flatui-wisteria: #8e44ad;
+	--flatui-wet-asphalt: #34495e;
+	--flatui-midnight-blue: #2c3e50;
+	--flatui-sun-flower: #f1c40f;
+	--flatui-orange: #f39c12;
+	--flatui-carrot: #e67e22;
+	--flatui-pumpkin: #d35400;
+	--flatui-alizarin: #e74c3c;
+	--flatui-pomegranate: #c0392b;
+	--flatui-clouds: #ecf0f1;
+	--flatui-silver: #bdc3c7;
+	--flatui-concrete: #95a5a6;
+	--flatui-asbestos: #7f8c8d;
+}
 .background-flatui-turquoise { background: #1abc9c; }
 .background-flatui-green-sea { background: #16a085; }
 .background-flatui-emerald { background: #2ecc71; }
