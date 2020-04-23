@@ -26,9 +26,11 @@ for title, slug in index.items():
     f.close()
 
     #   Step 2. b) Create CSS variables for each color
+    css += ':root {\n'
     for color, hex in colors.items():
         # Should look like --elementary-orange: #f37329;
-        css += '--' + slug + '-' + re.sub('\s+', '-', color).lower() + ': ' + hex.lower() + ';\n'
+        css += '\t--' + slug + '-' + re.sub('\s+', '-', color).lower() + ': ' + hex.lower() + ';\n'
+    css += '}\n'
 
     #   Step 2. c) Create CSS types for each color
     for type in types:
