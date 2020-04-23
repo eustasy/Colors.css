@@ -16,4 +16,4 @@ Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/Colors.cs
 
 Not auto-updated, but with Sub-Resource Integrity.
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2.0.1/colors.min.css" integrity="sha384-uefan8qr7pcLgmO2hlCzS2SGV0XUPpA9x5y3J3Wd2EIzpyTYz/GMN+xyLyNGmpOj" crossorigin="anonymous">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2.0.2/colors.min.css" integrity="sha256-ptKr79Qss12/Ynj9EXc6zqXxGntqkBwUZLshBmHs+sM=" crossorigin="anonymous">`
