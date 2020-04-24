@@ -1,0 +1,16 @@
+{
+    "Dark Text": "#212121",
+    "Light Text": "#fefefe",
+    "Light Background": "#fefefe",
+    "Medium Background": "#dedede",
+    "Dark Background": "#212121",
+    "Error": "#f44336",
+    "Error Text": "#0d47a1",
+    "Warning": "#ff9800",
+    "Warning Text": "#1b5e20",
+    "Warning 2": "#ffeb3b",
+    "Success": "#2196f3",
+    "Success Text": "#e65100",
+    "Information": "#2196f3",
+    "Information Text": "#b71c1c"
+}
