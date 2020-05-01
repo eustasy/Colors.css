@@ -3,7 +3,10 @@
 ![Build CSS distributables](https://github.com/eustasy/Colors.css/workflows/Build%20CSS%20distributables/badge.svg)
 [![Build Status](https://travis-ci.org/eustasy/Colors.css.svg?branch=master)](https://travis-ci.org/eustasy/Colors.css)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/29cee817aa88454996d8863b61d05120)](https://www.codacy.com/app/lewisgoddard/Colors.css?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=eustasy/Colors.css&amp;utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/9f31a0fa7e27073286c5/maintainability)](https://codeclimate.com/github/eustasy/Colors.css/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9f31a0fa7e27073286c5/maintainability)
+](https://codeclimate.com/github/eustasy/Colors.css/maintainability)
+[![Code Climate issues](https://img.shields.io/codeclimate/issues/eustasy/Colors.css?label=code%20issues)](https://codeclimate.com/github/eustasy/Colors.css/issues)
+[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/eustasy/Colors.css)](https://codeclimate.com/github/eustasy/Colors.css/trends/technical_debt)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/eustasy/Colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
 A selection of colors stylesheets, with backgrounds and fills too.
