@@ -1,6 +1,7 @@
 import json
 import re
 import os
+from collections import OrderedDict
 
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
@@ -10,7 +11,7 @@ css_all = ''
 
 #   Step 1. Load index.json
 f = open(path + '/../data/index.json')
-index = json.load(f)
+index = json.load(f, object_pairs_hook=OrderedDict)
 f.close()
 
 #   Step 2. Create individual palette files
@@ -22,7 +23,7 @@ for title, slug in index.items():
 
     #   Step 2. a) Load palette data
     f = open(path + '/../data/' + slug + '.json')
-    colors = json.load(f)
+    colors = json.load(f, object_pairs_hook=OrderedDict)
     f.close()
 
     #   Step 2. b) Create CSS variables for each color
