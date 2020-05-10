@@ -5,13 +5,13 @@
     "Medium Background": "#dedede",
     "Dark Background": "#212121",
     "Error": "#da4d45",
-    "Error Text": "#0d47a1",
+    "Error Text": "#b71c1c",
     "Warning": "#f37329",
-    "Warning Text": "#1b5e20",
+    "Warning Text": "#e65100",
     "Warning 2": "#fbd25d",
     "Success": "#b3cf3b",
-    "Success Text": "#e65100",
+    "Success Text": "#1b5e20",
     "Information": "#47a8e9",
-    "Information Text": "#b71c1c",
+    "Information Text": "#0d47a1",
     "Announcement": "#c35cc2"
 }

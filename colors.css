@@ -458,14 +458,14 @@
 	--eustasy-medium-background: #dedede;
 	--eustasy-dark-background: #212121;
 	--eustasy-error: #f44336;
-	--eustasy-error-text: #0d47a1;
+	--eustasy-error-text: #b71c1c;
 	--eustasy-warning: #ff9800;
-	--eustasy-warning-text: #1b5e20;
+	--eustasy-warning-text: #e65100;
 	--eustasy-warning-2: #ffeb3b;
-	--eustasy-success: #2196f3;
-	--eustasy-success-text: #e65100;
+	--eustasy-success: #4caf50;
+	--eustasy-success-text: #1b5e20;
 	--eustasy-information: #2196f3;
-	--eustasy-information-text: #b71c1c;
+	--eustasy-information-text: #0d47a1;
 }
 .background-eustasy-dark-text { background: #212121; }
 .background-eustasy-light-text { background: #fefefe; }
@@ -473,42 +473,42 @@
 .background-eustasy-medium-background { background: #dedede; }
 .background-eustasy-dark-background { background: #212121; }
 .background-eustasy-error { background: #f44336; }
-.background-eustasy-error-text { background: #0d47a1; }
+.background-eustasy-error-text { background: #b71c1c; }
 .background-eustasy-warning { background: #ff9800; }
-.background-eustasy-warning-text { background: #1b5e20; }
+.background-eustasy-warning-text { background: #e65100; }
 .background-eustasy-warning-2 { background: #ffeb3b; }
-.background-eustasy-success { background: #2196f3; }
-.background-eustasy-success-text { background: #e65100; }
+.background-eustasy-success { background: #4caf50; }
+.background-eustasy-success-text { background: #1b5e20; }
 .background-eustasy-information { background: #2196f3; }
-.background-eustasy-information-text { background: #b71c1c; }
+.background-eustasy-information-text { background: #0d47a1; }
 .color-eustasy-dark-text { color: #212121; }
 .color-eustasy-light-text { color: #fefefe; }
 .color-eustasy-light-background { color: #fefefe; }
 .color-eustasy-medium-background { color: #dedede; }
 .color-eustasy-dark-background { color: #212121; }
 .color-eustasy-error { color: #f44336; }
-.color-eustasy-error-text { color: #0d47a1; }
+.color-eustasy-error-text { color: #b71c1c; }
 .color-eustasy-warning { color: #ff9800; }
-.color-eustasy-warning-text { color: #1b5e20; }
+.color-eustasy-warning-text { color: #e65100; }
 .color-eustasy-warning-2 { color: #ffeb3b; }
-.color-eustasy-success { color: #2196f3; }
-.color-eustasy-success-text { color: #e65100; }
+.color-eustasy-success { color: #4caf50; }
+.color-eustasy-success-text { color: #1b5e20; }
 .color-eustasy-information { color: #2196f3; }
-.color-eustasy-information-text { color: #b71c1c; }
+.color-eustasy-information-text { color: #0d47a1; }
 .fill-eustasy-dark-text { fill: #212121; }
 .fill-eustasy-light-text { fill: #fefefe; }
 .fill-eustasy-light-background { fill: #fefefe; }
 .fill-eustasy-medium-background { fill: #dedede; }
 .fill-eustasy-dark-background { fill: #212121; }
 .fill-eustasy-error { fill: #f44336; }
-.fill-eustasy-error-text { fill: #0d47a1; }
+.fill-eustasy-error-text { fill: #b71c1c; }
 .fill-eustasy-warning { fill: #ff9800; }
-.fill-eustasy-warning-text { fill: #1b5e20; }
+.fill-eustasy-warning-text { fill: #e65100; }
 .fill-eustasy-warning-2 { fill: #ffeb3b; }
-.fill-eustasy-success { fill: #2196f3; }
-.fill-eustasy-success-text { fill: #e65100; }
+.fill-eustasy-success { fill: #4caf50; }
+.fill-eustasy-success-text { fill: #1b5e20; }
 .fill-eustasy-information { fill: #2196f3; }
-.fill-eustasy-information-text { fill: #b71c1c; }
+.fill-eustasy-information-text { fill: #0d47a1; }
 :root {
 	--flatui-turquoise: #1abc9c;
 	--flatui-green-sea: #16a085;
@@ -1200,14 +1200,14 @@
 	--howtoelementary-medium-background: #dedede;
 	--howtoelementary-dark-background: #212121;
 	--howtoelementary-error: #da4d45;
-	--howtoelementary-error-text: #0d47a1;
+	--howtoelementary-error-text: #b71c1c;
 	--howtoelementary-warning: #f37329;
-	--howtoelementary-warning-text: #1b5e20;
+	--howtoelementary-warning-text: #e65100;
 	--howtoelementary-warning-2: #fbd25d;
 	--howtoelementary-success: #b3cf3b;
-	--howtoelementary-success-text: #e65100;
+	--howtoelementary-success-text: #1b5e20;
 	--howtoelementary-information: #47a8e9;
-	--howtoelementary-information-text: #b71c1c;
+	--howtoelementary-information-text: #0d47a1;
 	--howtoelementary-announcement: #c35cc2;
 }
 .background-howtoelementary-dark-text { background: #212121; }
@@ -1216,14 +1216,14 @@
 .background-howtoelementary-medium-background { background: #dedede; }
 .background-howtoelementary-dark-background { background: #212121; }
 .background-howtoelementary-error { background: #da4d45; }
-.background-howtoelementary-error-text { background: #0d47a1; }
+.background-howtoelementary-error-text { background: #b71c1c; }
 .background-howtoelementary-warning { background: #f37329; }
-.background-howtoelementary-warning-text { background: #1b5e20; }
+.background-howtoelementary-warning-text { background: #e65100; }
 .background-howtoelementary-warning-2 { background: #fbd25d; }
 .background-howtoelementary-success { background: #b3cf3b; }
-.background-howtoelementary-success-text { background: #e65100; }
+.background-howtoelementary-success-text { background: #1b5e20; }
 .background-howtoelementary-information { background: #47a8e9; }
-.background-howtoelementary-information-text { background: #b71c1c; }
+.background-howtoelementary-information-text { background: #0d47a1; }
 .background-howtoelementary-announcement { background: #c35cc2; }
 .color-howtoelementary-dark-text { color: #212121; }
 .color-howtoelementary-light-text { color: #fefefe; }
@@ -1231,14 +1231,14 @@
 .color-howtoelementary-medium-background { color: #dedede; }
 .color-howtoelementary-dark-background { color: #212121; }
 .color-howtoelementary-error { color: #da4d45; }
-.color-howtoelementary-error-text { color: #0d47a1; }
+.color-howtoelementary-error-text { color: #b71c1c; }
 .color-howtoelementary-warning { color: #f37329; }
-.color-howtoelementary-warning-text { color: #1b5e20; }
+.color-howtoelementary-warning-text { color: #e65100; }
 .color-howtoelementary-warning-2 { color: #fbd25d; }
 .color-howtoelementary-success { color: #b3cf3b; }
-.color-howtoelementary-success-text { color: #e65100; }
+.color-howtoelementary-success-text { color: #1b5e20; }
 .color-howtoelementary-information { color: #47a8e9; }
-.color-howtoelementary-information-text { color: #b71c1c; }
+.color-howtoelementary-information-text { color: #0d47a1; }
 .color-howtoelementary-announcement { color: #c35cc2; }
 .fill-howtoelementary-dark-text { fill: #212121; }
 .fill-howtoelementary-light-text { fill: #fefefe; }
@@ -1246,14 +1246,14 @@
 .fill-howtoelementary-medium-background { fill: #dedede; }
 .fill-howtoelementary-dark-background { fill: #212121; }
 .fill-howtoelementary-error { fill: #da4d45; }
-.fill-howtoelementary-error-text { fill: #0d47a1; }
+.fill-howtoelementary-error-text { fill: #b71c1c; }
 .fill-howtoelementary-warning { fill: #f37329; }
-.fill-howtoelementary-warning-text { fill: #1b5e20; }
+.fill-howtoelementary-warning-text { fill: #e65100; }
 .fill-howtoelementary-warning-2 { fill: #fbd25d; }
 .fill-howtoelementary-success { fill: #b3cf3b; }
-.fill-howtoelementary-success-text { fill: #e65100; }
+.fill-howtoelementary-success-text { fill: #1b5e20; }
 .fill-howtoelementary-information { fill: #47a8e9; }
-.fill-howtoelementary-information-text { fill: #b71c1c; }
+.fill-howtoelementary-information-text { fill: #0d47a1; }
 .fill-howtoelementary-announcement { fill: #c35cc2; }
 :root {
 	--material-red: #f44336;
