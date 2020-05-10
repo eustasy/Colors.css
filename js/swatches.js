@@ -15,8 +15,8 @@ $(function() {
 			$('#js-target-swatches').append(palette)
 
 			$.getJSON('../data/' + slug + '.json', function( palette ) {
-				console.log(slug)
-				console.log(palette)
+				//console.log(slug)
+				//console.log(palette)
 				var swatches = ''
 				$.each( palette, function( color, hex ) {
 					//console.log(color + ': ' + hex)
@@ -25,13 +25,13 @@ $(function() {
 					var c_g = parseInt(c.substr(2, 2), 16)
 					var c_b = parseInt(c.substr(3, 2), 16)
 					c = ( ( c_r * 299 ) + ( c_g * 587 ) + ( c_b * 114 ) ) / 1000
-					console.log(c)
+					//console.log(c)
 					swatches += '<div class="css-colors-box" style="' +
 					'background: ' + hex + '; color: ' + ((c < 100) ? '#fff' : '#000') +
 					 ';">' + color + '</div>'
 				})
-				console.log(swatches)
-				console.log($('#js-target-swatches-' + slug))
+				//console.log(swatches)
+				//console.log($('#js-target-swatches-' + slug))
 				$('#js-target-swatches-' + slug).html(swatches)
 			})
 		})
