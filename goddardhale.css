@@ -1,0 +1,603 @@
+/*! Colors.css 2.0.6 | Goddard & Hale Palette | MIT License | https://github.com/eustasy/colors.css */
+:root {
+	--goddardhale-dark-text: #05060c;
+	--goddardhale-light-text: #e6ebeb;
+	--goddardhale-light-background: #e6ebeb;
+	--goddardhale-medium-background: #828789;
+	--goddardhale-dark-background: #32373b;
+	--goddardhale-type-blue: #236084;
+	--goddardhale-single-leaf: #b6e9dd;
+	--goddardhale-double-leaf: #8adcc9;
+	--goddardhale-triple-leaf: #70d4bd;
+	--goddardhale-full-leaf: #49c7ab;
+	--goddardhale-red: #ed254e;
+	--goddardhale-yellow: #f9dc5c;
+	--goddardhale-green: #49c7ab;
+	--goddardhale-blue: #236084;
+	--goddardhale-purple: #574d68;
+	--goddardhale-cream: #f4fffd;
+	--goddardhale-grey: #32373b;
+	--goddardhale-red-50: #e8dee9;
+	--goddardhale-red-100: #d2c5d3;
+	--goddardhale-red-150: #bbadbc;
+	--goddardhale-red-200: #a494a6;
+	--goddardhale-red-250: #8e7c90;
+	--goddardhale-red-300: #77647a;
+	--goddardhale-red-350: #604b64;
+	--goddardhale-red-400: #49334d;
+	--goddardhale-red-450: #331a37;
+	--goddardhale-red-500: #1c0221;
+	--goddardhale-red-550: #1b0220;
+	--goddardhale-red-600: #1b021f;
+	--goddardhale-red-650: #1a011f;
+	--goddardhale-red-700: #1a011e;
+	--goddardhale-red-750: #19011d;
+	--goddardhale-red-800: #18011c;
+	--goddardhale-red-850: #18011b;
+	--goddardhale-red-900: #17001b;
+	--goddardhale-red-950: #17001a;
+	--goddardhale-yellow-50: #fefb7b;
+	--goddardhale-yellow-100: #fef777;
+	--goddardhale-yellow-150: #fdf474;
+	--goddardhale-yellow-200: #fdf070;
+	--goddardhale-yellow-250: #fced6d;
+	--goddardhale-yellow-300: #fbea6a;
+	--goddardhale-yellow-350: #fbe666;
+	--goddardhale-yellow-400: #fae363;
+	--goddardhale-yellow-450: #fadf5f;
+	--goddardhale-yellow-500: #f9dc5c;
+	--goddardhale-yellow-550: #e4c653;
+	--goddardhale-yellow-600: #cfb04a;
+	--goddardhale-yellow-650: #ba9a40;
+	--goddardhale-yellow-700: #a58437;
+	--goddardhale-yellow-750: #906e2e;
+	--goddardhale-yellow-800: #7a5825;
+	--goddardhale-yellow-850: #65421c;
+	--goddardhale-yellow-900: #502c12;
+	--goddardhale-yellow-950: #3b1609;
+	--goddardhale-green-50: #93f9f0;
+	--goddardhale-green-100: #8bf4e9;
+	--goddardhale-green-150: #82eee1;
+	--goddardhale-green-200: #7ae9d9;
+	--goddardhale-green-250: #72e3d2;
+	--goddardhale-green-300: #6addca;
+	--goddardhale-green-350: #62d8c2;
+	--goddardhale-green-400: #59d2ba;
+	--goddardhale-green-450: #51cdb3;
+	--goddardhale-green-500: #49c7ab;
+	--goddardhale-green-550: #42b69a;
+	--goddardhale-green-600: #3aa489;
+	--goddardhale-green-650: #339378;
+	--goddardhale-green-700: #2c8167;
+	--goddardhale-green-750: #257056;
+	--goddardhale-green-800: #1d5f44;
+	--goddardhale-green-850: #164d33;
+	--goddardhale-green-900: #0f3c22;
+	--goddardhale-green-950: #072a11;
+	--goddardhale-blue-50: #c2eff3;
+	--goddardhale-blue-100: #b1dfe6;
+	--goddardhale-blue-150: #9fcfda;
+	--goddardhale-blue-200: #8dbfce;
+	--goddardhale-blue-250: #7cb0c2;
+	--goddardhale-blue-300: #6aa0b5;
+	--goddardhale-blue-350: #5890a9;
+	--goddardhale-blue-400: #46809d;
+	--goddardhale-blue-450: #357090;
+	--goddardhale-blue-500: #236084;
+	--goddardhale-blue-550: #20577b;
+	--goddardhale-blue-600: #1c4e72;
+	--goddardhale-blue-650: #194568;
+	--goddardhale-blue-700: #153c5f;
+	--goddardhale-blue-750: #123456;
+	--goddardhale-blue-800: #0e2b4d;
+	--goddardhale-blue-850: #0b2244;
+	--goddardhale-blue-900: #07193a;
+	--goddardhale-blue-950: #041031;
+	--goddardhale-purple-50: #eee9f0;
+	--goddardhale-purple-100: #ddd7e1;
+	--goddardhale-purple-150: #cdc6d2;
+	--goddardhale-purple-200: #bcb5c3;
+	--goddardhale-purple-250: #aba4b4;
+	--goddardhale-purple-300: #9a92a4;
+	--goddardhale-purple-350: #898195;
+	--goddardhale-purple-400: #797086;
+	--goddardhale-purple-450: #685e77;
+	--goddardhale-purple-500: #574d68;
+	--goddardhale-purple-550: #4f4560;
+	--goddardhale-purple-600: #483e58;
+	--goddardhale-purple-650: #403651;
+	--goddardhale-purple-700: #382e49;
+	--goddardhale-purple-750: #312741;
+	--goddardhale-purple-800: #291f39;
+	--goddardhale-purple-850: #211731;
+	--goddardhale-purple-900: #190f2a;
+	--goddardhale-purple-950: #120822;
+	--goddardhale-cream-50: #f9ffff;
+	--goddardhale-cream-100: #f8ffff;
+	--goddardhale-cream-150: #f8fffe;
+	--goddardhale-cream-200: #f7fffe;
+	--goddardhale-cream-250: #f7fffe;
+	--goddardhale-cream-300: #f6fffe;
+	--goddardhale-cream-350: #f6fffe;
+	--goddardhale-cream-400: #f5fffd;
+	--goddardhale-cream-450: #f5fffd;
+	--goddardhale-cream-500: #f4fffd;
+	--goddardhale-cream-550: #dce6e4;
+	--goddardhale-cream-600: #c3ccca;
+	--goddardhale-cream-650: #abb3b1;
+	--goddardhale-cream-700: #929a98;
+	--goddardhale-cream-750: #7a817f;
+	--goddardhale-cream-800: #626765;
+	--goddardhale-cream-850: #494e4c;
+	--goddardhale-cream-900: #313533;
+	--goddardhale-cream-950: #181b19;
+	--goddardhale-grey-50: #e6ebeb;
+	--goddardhale-grey-100: #d2d7d8;
+	--goddardhale-grey-150: #bec3c4;
+	--goddardhale-grey-200: #aaafb1;
+	--goddardhale-grey-250: #969b9d;
+	--goddardhale-grey-300: #828789;
+	--goddardhale-grey-350: #6e7376;
+	--goddardhale-grey-400: #5a5f62;
+	--goddardhale-grey-450: #464b4f;
+	--goddardhale-grey-500: #32373b;
+	--goddardhale-grey-550: #2d3236;
+	--goddardhale-grey-600: #282c31;
+	--goddardhale-grey-650: #23272b;
+	--goddardhale-grey-700: #1e2126;
+	--goddardhale-grey-750: #191c21;
+	--goddardhale-grey-800: #14171c;
+	--goddardhale-grey-850: #0f1117;
+	--goddardhale-grey-900: #0a0c11;
+	--goddardhale-grey-950: #05060c;
+}
+.background-goddardhale-dark-text { background: #05060c; }
+.background-goddardhale-light-text { background: #e6ebeb; }
+.background-goddardhale-light-background { background: #e6ebeb; }
+.background-goddardhale-medium-background { background: #828789; }
+.background-goddardhale-dark-background { background: #32373b; }
+.background-goddardhale-type-blue { background: #236084; }
+.background-goddardhale-single-leaf { background: #b6e9dd; }
+.background-goddardhale-double-leaf { background: #8adcc9; }
+.background-goddardhale-triple-leaf { background: #70d4bd; }
+.background-goddardhale-full-leaf { background: #49c7ab; }
+.background-goddardhale-red { background: #ed254e; }
+.background-goddardhale-yellow { background: #f9dc5c; }
+.background-goddardhale-green { background: #49c7ab; }
+.background-goddardhale-blue { background: #236084; }
+.background-goddardhale-purple { background: #574d68; }
+.background-goddardhale-cream { background: #f4fffd; }
+.background-goddardhale-grey { background: #32373b; }
+.background-goddardhale-red-50 { background: #e8dee9; }
+.background-goddardhale-red-100 { background: #d2c5d3; }
+.background-goddardhale-red-150 { background: #bbadbc; }
+.background-goddardhale-red-200 { background: #a494a6; }
+.background-goddardhale-red-250 { background: #8e7c90; }
+.background-goddardhale-red-300 { background: #77647a; }
+.background-goddardhale-red-350 { background: #604b64; }
+.background-goddardhale-red-400 { background: #49334d; }
+.background-goddardhale-red-450 { background: #331a37; }
+.background-goddardhale-red-500 { background: #1c0221; }
+.background-goddardhale-red-550 { background: #1b0220; }
+.background-goddardhale-red-600 { background: #1b021f; }
+.background-goddardhale-red-650 { background: #1a011f; }
+.background-goddardhale-red-700 { background: #1a011e; }
+.background-goddardhale-red-750 { background: #19011d; }
+.background-goddardhale-red-800 { background: #18011c; }
+.background-goddardhale-red-850 { background: #18011b; }
+.background-goddardhale-red-900 { background: #17001b; }
+.background-goddardhale-red-950 { background: #17001a; }
+.background-goddardhale-yellow-50 { background: #fefb7b; }
+.background-goddardhale-yellow-100 { background: #fef777; }
+.background-goddardhale-yellow-150 { background: #fdf474; }
+.background-goddardhale-yellow-200 { background: #fdf070; }
+.background-goddardhale-yellow-250 { background: #fced6d; }
+.background-goddardhale-yellow-300 { background: #fbea6a; }
+.background-goddardhale-yellow-350 { background: #fbe666; }
+.background-goddardhale-yellow-400 { background: #fae363; }
+.background-goddardhale-yellow-450 { background: #fadf5f; }
+.background-goddardhale-yellow-500 { background: #f9dc5c; }
+.background-goddardhale-yellow-550 { background: #e4c653; }
+.background-goddardhale-yellow-600 { background: #cfb04a; }
+.background-goddardhale-yellow-650 { background: #ba9a40; }
+.background-goddardhale-yellow-700 { background: #a58437; }
+.background-goddardhale-yellow-750 { background: #906e2e; }
+.background-goddardhale-yellow-800 { background: #7a5825; }
+.background-goddardhale-yellow-850 { background: #65421c; }
+.background-goddardhale-yellow-900 { background: #502c12; }
+.background-goddardhale-yellow-950 { background: #3b1609; }
+.background-goddardhale-green-50 { background: #93f9f0; }
+.background-goddardhale-green-100 { background: #8bf4e9; }
+.background-goddardhale-green-150 { background: #82eee1; }
+.background-goddardhale-green-200 { background: #7ae9d9; }
+.background-goddardhale-green-250 { background: #72e3d2; }
+.background-goddardhale-green-300 { background: #6addca; }
+.background-goddardhale-green-350 { background: #62d8c2; }
+.background-goddardhale-green-400 { background: #59d2ba; }
+.background-goddardhale-green-450 { background: #51cdb3; }
+.background-goddardhale-green-500 { background: #49c7ab; }
+.background-goddardhale-green-550 { background: #42b69a; }
+.background-goddardhale-green-600 { background: #3aa489; }
+.background-goddardhale-green-650 { background: #339378; }
+.background-goddardhale-green-700 { background: #2c8167; }
+.background-goddardhale-green-750 { background: #257056; }
+.background-goddardhale-green-800 { background: #1d5f44; }
+.background-goddardhale-green-850 { background: #164d33; }
+.background-goddardhale-green-900 { background: #0f3c22; }
+.background-goddardhale-green-950 { background: #072a11; }
+.background-goddardhale-blue-50 { background: #c2eff3; }
+.background-goddardhale-blue-100 { background: #b1dfe6; }
+.background-goddardhale-blue-150 { background: #9fcfda; }
+.background-goddardhale-blue-200 { background: #8dbfce; }
+.background-goddardhale-blue-250 { background: #7cb0c2; }
+.background-goddardhale-blue-300 { background: #6aa0b5; }
+.background-goddardhale-blue-350 { background: #5890a9; }
+.background-goddardhale-blue-400 { background: #46809d; }
+.background-goddardhale-blue-450 { background: #357090; }
+.background-goddardhale-blue-500 { background: #236084; }
+.background-goddardhale-blue-550 { background: #20577b; }
+.background-goddardhale-blue-600 { background: #1c4e72; }
+.background-goddardhale-blue-650 { background: #194568; }
+.background-goddardhale-blue-700 { background: #153c5f; }
+.background-goddardhale-blue-750 { background: #123456; }
+.background-goddardhale-blue-800 { background: #0e2b4d; }
+.background-goddardhale-blue-850 { background: #0b2244; }
+.background-goddardhale-blue-900 { background: #07193a; }
+.background-goddardhale-blue-950 { background: #041031; }
+.background-goddardhale-purple-50 { background: #eee9f0; }
+.background-goddardhale-purple-100 { background: #ddd7e1; }
+.background-goddardhale-purple-150 { background: #cdc6d2; }
+.background-goddardhale-purple-200 { background: #bcb5c3; }
+.background-goddardhale-purple-250 { background: #aba4b4; }
+.background-goddardhale-purple-300 { background: #9a92a4; }
+.background-goddardhale-purple-350 { background: #898195; }
+.background-goddardhale-purple-400 { background: #797086; }
+.background-goddardhale-purple-450 { background: #685e77; }
+.background-goddardhale-purple-500 { background: #574d68; }
+.background-goddardhale-purple-550 { background: #4f4560; }
+.background-goddardhale-purple-600 { background: #483e58; }
+.background-goddardhale-purple-650 { background: #403651; }
+.background-goddardhale-purple-700 { background: #382e49; }
+.background-goddardhale-purple-750 { background: #312741; }
+.background-goddardhale-purple-800 { background: #291f39; }
+.background-goddardhale-purple-850 { background: #211731; }
+.background-goddardhale-purple-900 { background: #190f2a; }
+.background-goddardhale-purple-950 { background: #120822; }
+.background-goddardhale-cream-50 { background: #f9ffff; }
+.background-goddardhale-cream-100 { background: #f8ffff; }
+.background-goddardhale-cream-150 { background: #f8fffe; }
+.background-goddardhale-cream-200 { background: #f7fffe; }
+.background-goddardhale-cream-250 { background: #f7fffe; }
+.background-goddardhale-cream-300 { background: #f6fffe; }
+.background-goddardhale-cream-350 { background: #f6fffe; }
+.background-goddardhale-cream-400 { background: #f5fffd; }
+.background-goddardhale-cream-450 { background: #f5fffd; }
+.background-goddardhale-cream-500 { background: #f4fffd; }
+.background-goddardhale-cream-550 { background: #dce6e4; }
+.background-goddardhale-cream-600 { background: #c3ccca; }
+.background-goddardhale-cream-650 { background: #abb3b1; }
+.background-goddardhale-cream-700 { background: #929a98; }
+.background-goddardhale-cream-750 { background: #7a817f; }
+.background-goddardhale-cream-800 { background: #626765; }
+.background-goddardhale-cream-850 { background: #494e4c; }
+.background-goddardhale-cream-900 { background: #313533; }
+.background-goddardhale-cream-950 { background: #181b19; }
+.background-goddardhale-grey-50 { background: #e6ebeb; }
+.background-goddardhale-grey-100 { background: #d2d7d8; }
+.background-goddardhale-grey-150 { background: #bec3c4; }
+.background-goddardhale-grey-200 { background: #aaafb1; }
+.background-goddardhale-grey-250 { background: #969b9d; }
+.background-goddardhale-grey-300 { background: #828789; }
+.background-goddardhale-grey-350 { background: #6e7376; }
+.background-goddardhale-grey-400 { background: #5a5f62; }
+.background-goddardhale-grey-450 { background: #464b4f; }
+.background-goddardhale-grey-500 { background: #32373b; }
+.background-goddardhale-grey-550 { background: #2d3236; }
+.background-goddardhale-grey-600 { background: #282c31; }
+.background-goddardhale-grey-650 { background: #23272b; }
+.background-goddardhale-grey-700 { background: #1e2126; }
+.background-goddardhale-grey-750 { background: #191c21; }
+.background-goddardhale-grey-800 { background: #14171c; }
+.background-goddardhale-grey-850 { background: #0f1117; }
+.background-goddardhale-grey-900 { background: #0a0c11; }
+.background-goddardhale-grey-950 { background: #05060c; }
+.color-goddardhale-dark-text { color: #05060c; }
+.color-goddardhale-light-text { color: #e6ebeb; }
+.color-goddardhale-light-background { color: #e6ebeb; }
+.color-goddardhale-medium-background { color: #828789; }
+.color-goddardhale-dark-background { color: #32373b; }
+.color-goddardhale-type-blue { color: #236084; }
+.color-goddardhale-single-leaf { color: #b6e9dd; }
+.color-goddardhale-double-leaf { color: #8adcc9; }
+.color-goddardhale-triple-leaf { color: #70d4bd; }
+.color-goddardhale-full-leaf { color: #49c7ab; }
+.color-goddardhale-red { color: #ed254e; }
+.color-goddardhale-yellow { color: #f9dc5c; }
+.color-goddardhale-green { color: #49c7ab; }
+.color-goddardhale-blue { color: #236084; }
+.color-goddardhale-purple { color: #574d68; }
+.color-goddardhale-cream { color: #f4fffd; }
+.color-goddardhale-grey { color: #32373b; }
+.color-goddardhale-red-50 { color: #e8dee9; }
+.color-goddardhale-red-100 { color: #d2c5d3; }
+.color-goddardhale-red-150 { color: #bbadbc; }
+.color-goddardhale-red-200 { color: #a494a6; }
+.color-goddardhale-red-250 { color: #8e7c90; }
+.color-goddardhale-red-300 { color: #77647a; }
+.color-goddardhale-red-350 { color: #604b64; }
+.color-goddardhale-red-400 { color: #49334d; }
+.color-goddardhale-red-450 { color: #331a37; }
+.color-goddardhale-red-500 { color: #1c0221; }
+.color-goddardhale-red-550 { color: #1b0220; }
+.color-goddardhale-red-600 { color: #1b021f; }
+.color-goddardhale-red-650 { color: #1a011f; }
+.color-goddardhale-red-700 { color: #1a011e; }
+.color-goddardhale-red-750 { color: #19011d; }
+.color-goddardhale-red-800 { color: #18011c; }
+.color-goddardhale-red-850 { color: #18011b; }
+.color-goddardhale-red-900 { color: #17001b; }
+.color-goddardhale-red-950 { color: #17001a; }
+.color-goddardhale-yellow-50 { color: #fefb7b; }
+.color-goddardhale-yellow-100 { color: #fef777; }
+.color-goddardhale-yellow-150 { color: #fdf474; }
+.color-goddardhale-yellow-200 { color: #fdf070; }
+.color-goddardhale-yellow-250 { color: #fced6d; }
+.color-goddardhale-yellow-300 { color: #fbea6a; }
+.color-goddardhale-yellow-350 { color: #fbe666; }
+.color-goddardhale-yellow-400 { color: #fae363; }
+.color-goddardhale-yellow-450 { color: #fadf5f; }
+.color-goddardhale-yellow-500 { color: #f9dc5c; }
+.color-goddardhale-yellow-550 { color: #e4c653; }
+.color-goddardhale-yellow-600 { color: #cfb04a; }
+.color-goddardhale-yellow-650 { color: #ba9a40; }
+.color-goddardhale-yellow-700 { color: #a58437; }
+.color-goddardhale-yellow-750 { color: #906e2e; }
+.color-goddardhale-yellow-800 { color: #7a5825; }
+.color-goddardhale-yellow-850 { color: #65421c; }
+.color-goddardhale-yellow-900 { color: #502c12; }
+.color-goddardhale-yellow-950 { color: #3b1609; }
+.color-goddardhale-green-50 { color: #93f9f0; }
+.color-goddardhale-green-100 { color: #8bf4e9; }
+.color-goddardhale-green-150 { color: #82eee1; }
+.color-goddardhale-green-200 { color: #7ae9d9; }
+.color-goddardhale-green-250 { color: #72e3d2; }
+.color-goddardhale-green-300 { color: #6addca; }
+.color-goddardhale-green-350 { color: #62d8c2; }
+.color-goddardhale-green-400 { color: #59d2ba; }
+.color-goddardhale-green-450 { color: #51cdb3; }
+.color-goddardhale-green-500 { color: #49c7ab; }
+.color-goddardhale-green-550 { color: #42b69a; }
+.color-goddardhale-green-600 { color: #3aa489; }
+.color-goddardhale-green-650 { color: #339378; }
+.color-goddardhale-green-700 { color: #2c8167; }
+.color-goddardhale-green-750 { color: #257056; }
+.color-goddardhale-green-800 { color: #1d5f44; }
+.color-goddardhale-green-850 { color: #164d33; }
+.color-goddardhale-green-900 { color: #0f3c22; }
+.color-goddardhale-green-950 { color: #072a11; }
+.color-goddardhale-blue-50 { color: #c2eff3; }
+.color-goddardhale-blue-100 { color: #b1dfe6; }
+.color-goddardhale-blue-150 { color: #9fcfda; }
+.color-goddardhale-blue-200 { color: #8dbfce; }
+.color-goddardhale-blue-250 { color: #7cb0c2; }
+.color-goddardhale-blue-300 { color: #6aa0b5; }
+.color-goddardhale-blue-350 { color: #5890a9; }
+.color-goddardhale-blue-400 { color: #46809d; }
+.color-goddardhale-blue-450 { color: #357090; }
+.color-goddardhale-blue-500 { color: #236084; }
+.color-goddardhale-blue-550 { color: #20577b; }
+.color-goddardhale-blue-600 { color: #1c4e72; }
+.color-goddardhale-blue-650 { color: #194568; }
+.color-goddardhale-blue-700 { color: #153c5f; }
+.color-goddardhale-blue-750 { color: #123456; }
+.color-goddardhale-blue-800 { color: #0e2b4d; }
+.color-goddardhale-blue-850 { color: #0b2244; }
+.color-goddardhale-blue-900 { color: #07193a; }
+.color-goddardhale-blue-950 { color: #041031; }
+.color-goddardhale-purple-50 { color: #eee9f0; }
+.color-goddardhale-purple-100 { color: #ddd7e1; }
+.color-goddardhale-purple-150 { color: #cdc6d2; }
+.color-goddardhale-purple-200 { color: #bcb5c3; }
+.color-goddardhale-purple-250 { color: #aba4b4; }
+.color-goddardhale-purple-300 { color: #9a92a4; }
+.color-goddardhale-purple-350 { color: #898195; }
+.color-goddardhale-purple-400 { color: #797086; }
+.color-goddardhale-purple-450 { color: #685e77; }
+.color-goddardhale-purple-500 { color: #574d68; }
+.color-goddardhale-purple-550 { color: #4f4560; }
+.color-goddardhale-purple-600 { color: #483e58; }
+.color-goddardhale-purple-650 { color: #403651; }
+.color-goddardhale-purple-700 { color: #382e49; }
+.color-goddardhale-purple-750 { color: #312741; }
+.color-goddardhale-purple-800 { color: #291f39; }
+.color-goddardhale-purple-850 { color: #211731; }
+.color-goddardhale-purple-900 { color: #190f2a; }
+.color-goddardhale-purple-950 { color: #120822; }
+.color-goddardhale-cream-50 { color: #f9ffff; }
+.color-goddardhale-cream-100 { color: #f8ffff; }
+.color-goddardhale-cream-150 { color: #f8fffe; }
+.color-goddardhale-cream-200 { color: #f7fffe; }
+.color-goddardhale-cream-250 { color: #f7fffe; }
+.color-goddardhale-cream-300 { color: #f6fffe; }
+.color-goddardhale-cream-350 { color: #f6fffe; }
+.color-goddardhale-cream-400 { color: #f5fffd; }
+.color-goddardhale-cream-450 { color: #f5fffd; }
+.color-goddardhale-cream-500 { color: #f4fffd; }
+.color-goddardhale-cream-550 { color: #dce6e4; }
+.color-goddardhale-cream-600 { color: #c3ccca; }
+.color-goddardhale-cream-650 { color: #abb3b1; }
+.color-goddardhale-cream-700 { color: #929a98; }
+.color-goddardhale-cream-750 { color: #7a817f; }
+.color-goddardhale-cream-800 { color: #626765; }
+.color-goddardhale-cream-850 { color: #494e4c; }
+.color-goddardhale-cream-900 { color: #313533; }
+.color-goddardhale-cream-950 { color: #181b19; }
+.color-goddardhale-grey-50 { color: #e6ebeb; }
+.color-goddardhale-grey-100 { color: #d2d7d8; }
+.color-goddardhale-grey-150 { color: #bec3c4; }
+.color-goddardhale-grey-200 { color: #aaafb1; }
+.color-goddardhale-grey-250 { color: #969b9d; }
+.color-goddardhale-grey-300 { color: #828789; }
+.color-goddardhale-grey-350 { color: #6e7376; }
+.color-goddardhale-grey-400 { color: #5a5f62; }
+.color-goddardhale-grey-450 { color: #464b4f; }
+.color-goddardhale-grey-500 { color: #32373b; }
+.color-goddardhale-grey-550 { color: #2d3236; }
+.color-goddardhale-grey-600 { color: #282c31; }
+.color-goddardhale-grey-650 { color: #23272b; }
+.color-goddardhale-grey-700 { color: #1e2126; }
+.color-goddardhale-grey-750 { color: #191c21; }
+.color-goddardhale-grey-800 { color: #14171c; }
+.color-goddardhale-grey-850 { color: #0f1117; }
+.color-goddardhale-grey-900 { color: #0a0c11; }
+.color-goddardhale-grey-950 { color: #05060c; }
+.fill-goddardhale-dark-text { fill: #05060c; }
+.fill-goddardhale-light-text { fill: #e6ebeb; }
+.fill-goddardhale-light-background { fill: #e6ebeb; }
+.fill-goddardhale-medium-background { fill: #828789; }
+.fill-goddardhale-dark-background { fill: #32373b; }
+.fill-goddardhale-type-blue { fill: #236084; }
+.fill-goddardhale-single-leaf { fill: #b6e9dd; }
+.fill-goddardhale-double-leaf { fill: #8adcc9; }
+.fill-goddardhale-triple-leaf { fill: #70d4bd; }
+.fill-goddardhale-full-leaf { fill: #49c7ab; }
+.fill-goddardhale-red { fill: #ed254e; }
+.fill-goddardhale-yellow { fill: #f9dc5c; }
+.fill-goddardhale-green { fill: #49c7ab; }
+.fill-goddardhale-blue { fill: #236084; }
+.fill-goddardhale-purple { fill: #574d68; }
+.fill-goddardhale-cream { fill: #f4fffd; }
+.fill-goddardhale-grey { fill: #32373b; }
+.fill-goddardhale-red-50 { fill: #e8dee9; }
+.fill-goddardhale-red-100 { fill: #d2c5d3; }
+.fill-goddardhale-red-150 { fill: #bbadbc; }
+.fill-goddardhale-red-200 { fill: #a494a6; }
+.fill-goddardhale-red-250 { fill: #8e7c90; }
+.fill-goddardhale-red-300 { fill: #77647a; }
+.fill-goddardhale-red-350 { fill: #604b64; }
+.fill-goddardhale-red-400 { fill: #49334d; }
+.fill-goddardhale-red-450 { fill: #331a37; }
+.fill-goddardhale-red-500 { fill: #1c0221; }
+.fill-goddardhale-red-550 { fill: #1b0220; }
+.fill-goddardhale-red-600 { fill: #1b021f; }
+.fill-goddardhale-red-650 { fill: #1a011f; }
+.fill-goddardhale-red-700 { fill: #1a011e; }
+.fill-goddardhale-red-750 { fill: #19011d; }
+.fill-goddardhale-red-800 { fill: #18011c; }
+.fill-goddardhale-red-850 { fill: #18011b; }
+.fill-goddardhale-red-900 { fill: #17001b; }
+.fill-goddardhale-red-950 { fill: #17001a; }
+.fill-goddardhale-yellow-50 { fill: #fefb7b; }
+.fill-goddardhale-yellow-100 { fill: #fef777; }
+.fill-goddardhale-yellow-150 { fill: #fdf474; }
+.fill-goddardhale-yellow-200 { fill: #fdf070; }
+.fill-goddardhale-yellow-250 { fill: #fced6d; }
+.fill-goddardhale-yellow-300 { fill: #fbea6a; }
+.fill-goddardhale-yellow-350 { fill: #fbe666; }
+.fill-goddardhale-yellow-400 { fill: #fae363; }
+.fill-goddardhale-yellow-450 { fill: #fadf5f; }
+.fill-goddardhale-yellow-500 { fill: #f9dc5c; }
+.fill-goddardhale-yellow-550 { fill: #e4c653; }
+.fill-goddardhale-yellow-600 { fill: #cfb04a; }
+.fill-goddardhale-yellow-650 { fill: #ba9a40; }
+.fill-goddardhale-yellow-700 { fill: #a58437; }
+.fill-goddardhale-yellow-750 { fill: #906e2e; }
+.fill-goddardhale-yellow-800 { fill: #7a5825; }
+.fill-goddardhale-yellow-850 { fill: #65421c; }
+.fill-goddardhale-yellow-900 { fill: #502c12; }
+.fill-goddardhale-yellow-950 { fill: #3b1609; }
+.fill-goddardhale-green-50 { fill: #93f9f0; }
+.fill-goddardhale-green-100 { fill: #8bf4e9; }
+.fill-goddardhale-green-150 { fill: #82eee1; }
+.fill-goddardhale-green-200 { fill: #7ae9d9; }
+.fill-goddardhale-green-250 { fill: #72e3d2; }
+.fill-goddardhale-green-300 { fill: #6addca; }
+.fill-goddardhale-green-350 { fill: #62d8c2; }
+.fill-goddardhale-green-400 { fill: #59d2ba; }
+.fill-goddardhale-green-450 { fill: #51cdb3; }
+.fill-goddardhale-green-500 { fill: #49c7ab; }
+.fill-goddardhale-green-550 { fill: #42b69a; }
+.fill-goddardhale-green-600 { fill: #3aa489; }
+.fill-goddardhale-green-650 { fill: #339378; }
+.fill-goddardhale-green-700 { fill: #2c8167; }
+.fill-goddardhale-green-750 { fill: #257056; }
+.fill-goddardhale-green-800 { fill: #1d5f44; }
+.fill-goddardhale-green-850 { fill: #164d33; }
+.fill-goddardhale-green-900 { fill: #0f3c22; }
+.fill-goddardhale-green-950 { fill: #072a11; }
+.fill-goddardhale-blue-50 { fill: #c2eff3; }
+.fill-goddardhale-blue-100 { fill: #b1dfe6; }
+.fill-goddardhale-blue-150 { fill: #9fcfda; }
+.fill-goddardhale-blue-200 { fill: #8dbfce; }
+.fill-goddardhale-blue-250 { fill: #7cb0c2; }
+.fill-goddardhale-blue-300 { fill: #6aa0b5; }
+.fill-goddardhale-blue-350 { fill: #5890a9; }
+.fill-goddardhale-blue-400 { fill: #46809d; }
+.fill-goddardhale-blue-450 { fill: #357090; }
+.fill-goddardhale-blue-500 { fill: #236084; }
+.fill-goddardhale-blue-550 { fill: #20577b; }
+.fill-goddardhale-blue-600 { fill: #1c4e72; }
+.fill-goddardhale-blue-650 { fill: #194568; }
+.fill-goddardhale-blue-700 { fill: #153c5f; }
+.fill-goddardhale-blue-750 { fill: #123456; }
+.fill-goddardhale-blue-800 { fill: #0e2b4d; }
+.fill-goddardhale-blue-850 { fill: #0b2244; }
+.fill-goddardhale-blue-900 { fill: #07193a; }
+.fill-goddardhale-blue-950 { fill: #041031; }
+.fill-goddardhale-purple-50 { fill: #eee9f0; }
+.fill-goddardhale-purple-100 { fill: #ddd7e1; }
+.fill-goddardhale-purple-150 { fill: #cdc6d2; }
+.fill-goddardhale-purple-200 { fill: #bcb5c3; }
+.fill-goddardhale-purple-250 { fill: #aba4b4; }
+.fill-goddardhale-purple-300 { fill: #9a92a4; }
+.fill-goddardhale-purple-350 { fill: #898195; }
+.fill-goddardhale-purple-400 { fill: #797086; }
+.fill-goddardhale-purple-450 { fill: #685e77; }
+.fill-goddardhale-purple-500 { fill: #574d68; }
+.fill-goddardhale-purple-550 { fill: #4f4560; }
+.fill-goddardhale-purple-600 { fill: #483e58; }
+.fill-goddardhale-purple-650 { fill: #403651; }
+.fill-goddardhale-purple-700 { fill: #382e49; }
+.fill-goddardhale-purple-750 { fill: #312741; }
+.fill-goddardhale-purple-800 { fill: #291f39; }
+.fill-goddardhale-purple-850 { fill: #211731; }
+.fill-goddardhale-purple-900 { fill: #190f2a; }
+.fill-goddardhale-purple-950 { fill: #120822; }
+.fill-goddardhale-cream-50 { fill: #f9ffff; }
+.fill-goddardhale-cream-100 { fill: #f8ffff; }
+.fill-goddardhale-cream-150 { fill: #f8fffe; }
+.fill-goddardhale-cream-200 { fill: #f7fffe; }
+.fill-goddardhale-cream-250 { fill: #f7fffe; }
+.fill-goddardhale-cream-300 { fill: #f6fffe; }
+.fill-goddardhale-cream-350 { fill: #f6fffe; }
+.fill-goddardhale-cream-400 { fill: #f5fffd; }
+.fill-goddardhale-cream-450 { fill: #f5fffd; }
+.fill-goddardhale-cream-500 { fill: #f4fffd; }
+.fill-goddardhale-cream-550 { fill: #dce6e4; }
+.fill-goddardhale-cream-600 { fill: #c3ccca; }
+.fill-goddardhale-cream-650 { fill: #abb3b1; }
+.fill-goddardhale-cream-700 { fill: #929a98; }
+.fill-goddardhale-cream-750 { fill: #7a817f; }
+.fill-goddardhale-cream-800 { fill: #626765; }
+.fill-goddardhale-cream-850 { fill: #494e4c; }
+.fill-goddardhale-cream-900 { fill: #313533; }
+.fill-goddardhale-cream-950 { fill: #181b19; }
+.fill-goddardhale-grey-50 { fill: #e6ebeb; }
+.fill-goddardhale-grey-100 { fill: #d2d7d8; }
+.fill-goddardhale-grey-150 { fill: #bec3c4; }
+.fill-goddardhale-grey-200 { fill: #aaafb1; }
+.fill-goddardhale-grey-250 { fill: #969b9d; }
+.fill-goddardhale-grey-300 { fill: #828789; }
+.fill-goddardhale-grey-350 { fill: #6e7376; }
+.fill-goddardhale-grey-400 { fill: #5a5f62; }
+.fill-goddardhale-grey-450 { fill: #464b4f; }
+.fill-goddardhale-grey-500 { fill: #32373b; }
+.fill-goddardhale-grey-550 { fill: #2d3236; }
+.fill-goddardhale-grey-600 { fill: #282c31; }
+.fill-goddardhale-grey-650 { fill: #23272b; }
+.fill-goddardhale-grey-700 { fill: #1e2126; }
+.fill-goddardhale-grey-750 { fill: #191c21; }
+.fill-goddardhale-grey-800 { fill: #14171c; }
+.fill-goddardhale-grey-850 { fill: #0f1117; }
+.fill-goddardhale-grey-900 { fill: #0a0c11; }
+.fill-goddardhale-grey-950 { fill: #05060c; }

@@ -6,7 +6,7 @@ from collections import OrderedDict
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
 types = ['background', 'color', 'fill']
-version = '2.0.5'
+version = '2.0.6'
 css_all = ''
 
 #   Step 1. Load index.json

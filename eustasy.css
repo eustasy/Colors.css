@@ -1,0 +1,59 @@
+/*! Colors.css 2.0.6 | eustasy Palette | MIT License | https://github.com/eustasy/colors.css */
+:root {
+	--eustasy-dark-text: #212121;
+	--eustasy-light-text: #fefefe;
+	--eustasy-light-background: #fefefe;
+	--eustasy-medium-background: #dedede;
+	--eustasy-dark-background: #212121;
+	--eustasy-error: #f44336;
+	--eustasy-error-text: #0d47a1;
+	--eustasy-warning: #ff9800;
+	--eustasy-warning-text: #1b5e20;
+	--eustasy-warning-2: #ffeb3b;
+	--eustasy-success: #2196f3;
+	--eustasy-success-text: #e65100;
+	--eustasy-information: #2196f3;
+	--eustasy-information-text: #b71c1c;
+}
+.background-eustasy-dark-text { background: #212121; }
+.background-eustasy-light-text { background: #fefefe; }
+.background-eustasy-light-background { background: #fefefe; }
+.background-eustasy-medium-background { background: #dedede; }
+.background-eustasy-dark-background { background: #212121; }
+.background-eustasy-error { background: #f44336; }
+.background-eustasy-error-text { background: #0d47a1; }
+.background-eustasy-warning { background: #ff9800; }
+.background-eustasy-warning-text { background: #1b5e20; }
+.background-eustasy-warning-2 { background: #ffeb3b; }
+.background-eustasy-success { background: #2196f3; }
+.background-eustasy-success-text { background: #e65100; }
+.background-eustasy-information { background: #2196f3; }
+.background-eustasy-information-text { background: #b71c1c; }
+.color-eustasy-dark-text { color: #212121; }
+.color-eustasy-light-text { color: #fefefe; }
+.color-eustasy-light-background { color: #fefefe; }
+.color-eustasy-medium-background { color: #dedede; }
+.color-eustasy-dark-background { color: #212121; }
+.color-eustasy-error { color: #f44336; }
+.color-eustasy-error-text { color: #0d47a1; }
+.color-eustasy-warning { color: #ff9800; }
+.color-eustasy-warning-text { color: #1b5e20; }
+.color-eustasy-warning-2 { color: #ffeb3b; }
+.color-eustasy-success { color: #2196f3; }
+.color-eustasy-success-text { color: #e65100; }
+.color-eustasy-information { color: #2196f3; }
+.color-eustasy-information-text { color: #b71c1c; }
+.fill-eustasy-dark-text { fill: #212121; }
+.fill-eustasy-light-text { fill: #fefefe; }
+.fill-eustasy-light-background { fill: #fefefe; }
+.fill-eustasy-medium-background { fill: #dedede; }
+.fill-eustasy-dark-background { fill: #212121; }
+.fill-eustasy-error { fill: #f44336; }
+.fill-eustasy-error-text { fill: #0d47a1; }
+.fill-eustasy-warning { fill: #ff9800; }
+.fill-eustasy-warning-text { fill: #1b5e20; }
+.fill-eustasy-warning-2 { fill: #ffeb3b; }
+.fill-eustasy-success { fill: #2196f3; }
+.fill-eustasy-success-text { fill: #e65100; }
+.fill-eustasy-information { fill: #2196f3; }
+.fill-eustasy-information-text { fill: #b71c1c; }
