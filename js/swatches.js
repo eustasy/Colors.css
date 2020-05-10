@@ -1,33 +1,39 @@
 /*global $*/
-var swatches = ''
 $(function() {
-	$.getJSON('../data/colors.json', function( data ) {
+	$.getJSON('../data/index.json', function( data ) {
 		//console.log(data)
-		$.each( data, function( group, list ) {
-			//console.log(group + ': ' + list)
-			swatches += '<section class="whole grid">'
-			swatches += '<h2 id="' + group + '">' + group + '</h2>'
-			if ( group == 'Baseline' ) {
-				group = ''
-			} else {
-				group = group.replace(/\s+/g, '').toLowerCase() + '-'
-			}
-			var typeIndex
-			var types = ['background', 'color', 'fill']
-			for (typeIndex = 0; typeIndex < types.length; ++typeIndex) {
-				swatches += '<div class="whole smablet-third">'
-				swatches += '<h3 id="' + group + '-' + types[typeIndex] + '">'
-				swatches += types[typeIndex].charAt(0).toUpperCase() + types[typeIndex].slice(1) + '</h3>'
-				$.each( list, function( key, val ) {
-					//console.log(key + ': ' + val)
-					var name = types[typeIndex] + '-' + group + key.replace(/\s+/g, '-').toLowerCase()
-					swatches += '<div class="css-colors-box ' + name + '">' + name + '</div>'
+		$.each( data, function( name, slug ) {
+			//console.name(name + ': ' + slug)
+			var palette = ''
+			palette += '<section class="whole grid">'
+			palette += '<h2 id="' + slug + '">' + name + '</h2>'
+			palette += '<div id="js-target-swatches-' + slug + '" style="' +
+			'display: block; columns: 3;"></div>'
+			palette += '</section>'
+			palette += '<hr class="section-breaker">'
+			//console.log(palette)
+			$('#js-target-swatches').append(palette)
+
+			$.getJSON('../data/' + slug + '.json', function( palette ) {
+				console.log(slug)
+				console.log(palette)
+				var swatches = ''
+				$.each( palette, function( color, hex ) {
+					//console.log(color + ': ' + hex)
+					var c = hex.replace('#', '')
+					var c_r = parseInt(c.substr(0, 2), 16)
+					var c_g = parseInt(c.substr(2, 2), 16)
+					var c_b = parseInt(c.substr(3, 2), 16)
+					c = ( ( c_r * 299 ) + ( c_g * 587 ) + ( c_b * 114 ) ) / 1000
+					console.log(c)
+					swatches += '<div class="css-colors-box" style="' +
+					'background: ' + hex + '; color: ' + ((c < 100) ? '#fff' : '#000') +
+					 ';">' + color + '</div>'
 				})
-				swatches += '</div>'
-			}
-			swatches += '</section>'
-			swatches += '<hr class="section-breaker">'
+				console.log(swatches)
+				console.log($('#js-target-swatches-' + slug))
+				$('#js-target-swatches-' + slug).html(swatches)
+			})
 		})
-		$('#js-target-swatches').html(swatches)
 	})
 })
