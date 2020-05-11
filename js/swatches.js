@@ -1,6 +1,6 @@
 /*global $*/
 $(function() {
-	$.getJSON('../data/index.json', function( data ) {
+	$.getJSON('data/index.json', function( data ) {
 		//console.log(data)
 		$.each( data, function( name, slug ) {
 			//console.name(name + ': ' + slug)
@@ -14,7 +14,7 @@ $(function() {
 			//console.log(palette)
 			$('#js-target-swatches').append(palette)
 
-			$.getJSON('../data/' + slug + '.json', function( palette ) {
+			$.getJSON('data/' + slug + '.json', function( palette ) {
 				//console.log(slug)
 				//console.log(palette)
 				var swatches = ''
