@@ -7,8 +7,7 @@ $(function() {
 			var palette = ''
 			palette += '<section class="whole grid">'
 			palette += '<h2 id="' + slug + '">' + name + '</h2>'
-			palette += '<div id="js-target-swatches-' + slug + '" style="' +
-			'display: block; columns: 3;"></div>'
+			palette += '<div id="js-target-swatches-' + slug + '"></div>'
 			palette += '</section>'
 			palette += '<hr class="section-breaker">'
 			//console.log(palette)
@@ -26,7 +25,7 @@ $(function() {
 					var c_b = parseInt(c.substr(3, 2), 16)
 					c = ( ( c_r * 299 ) + ( c_g * 587 ) + ( c_b * 114 ) ) / 1000
 					//console.log(c)
-					swatches += '<div class="css-colors-box" style="' +
+					swatches += '<div style="display: inline-block; padding: 1rem;' +
 					'background: ' + hex + '; color: ' + ((c < 100) ? '#fff' : '#000') +
 					 ';">' + color + '</div>'
 				})
