@@ -17,25 +17,25 @@
 	--goddardhale-purple: #574d68;
 	--goddardhale-cream: #f4fffd;
 	--goddardhale-grey: #32373b;
-	--goddardhale-red-50: #e8dee9;
-	--goddardhale-red-100: #d2c5d3;
-	--goddardhale-red-150: #bbadbc;
-	--goddardhale-red-200: #a494a6;
-	--goddardhale-red-250: #8e7c90;
-	--goddardhale-red-300: #77647a;
-	--goddardhale-red-350: #604b64;
-	--goddardhale-red-400: #49334d;
-	--goddardhale-red-450: #331a37;
-	--goddardhale-red-500: #1c0221;
-	--goddardhale-red-550: #1b0220;
-	--goddardhale-red-600: #1b021f;
-	--goddardhale-red-650: #1a011f;
-	--goddardhale-red-700: #1a011e;
-	--goddardhale-red-750: #19011d;
-	--goddardhale-red-800: #18011c;
-	--goddardhale-red-850: #18011b;
-	--goddardhale-red-900: #17001b;
-	--goddardhale-red-950: #17001a;
+	--goddardhale-red-50: #fdb0bf;
+	--goddardhale-red-100: #fba0b2;
+	--goddardhale-red-150: #fa91a6;
+	--goddardhale-red-200: #f88199;
+	--goddardhale-red-250: #f6728d;
+	--goddardhale-red-300: #f46380;
+	--goddardhale-red-350: #f25374;
+	--goddardhale-red-400: #f14467;
+	--goddardhale-red-450: #ef345b;
+	--goddardhale-red-500: #ed254e;
+	--goddardhale-red-550: #dd2146;
+	--goddardhale-red-600: #ce1e3e;
+	--goddardhale-red-650: #be1a37;
+	--goddardhale-red-700: #ae162f;
+	--goddardhale-red-750: #9f1327;
+	--goddardhale-red-800: #8f0f1f;
+	--goddardhale-red-850: #7f0b17;
+	--goddardhale-red-900: #6f0710;
+	--goddardhale-red-950: #600408;
 	--goddardhale-yellow-50: #fefb7b;
 	--goddardhale-yellow-100: #fef777;
 	--goddardhale-yellow-150: #fdf474;
@@ -168,25 +168,25 @@
 .background-goddardhale-purple { background: #574d68; }
 .background-goddardhale-cream { background: #f4fffd; }
 .background-goddardhale-grey { background: #32373b; }
-.background-goddardhale-red-50 { background: #e8dee9; }
-.background-goddardhale-red-100 { background: #d2c5d3; }
-.background-goddardhale-red-150 { background: #bbadbc; }
-.background-goddardhale-red-200 { background: #a494a6; }
-.background-goddardhale-red-250 { background: #8e7c90; }
-.background-goddardhale-red-300 { background: #77647a; }
-.background-goddardhale-red-350 { background: #604b64; }
-.background-goddardhale-red-400 { background: #49334d; }
-.background-goddardhale-red-450 { background: #331a37; }
-.background-goddardhale-red-500 { background: #1c0221; }
-.background-goddardhale-red-550 { background: #1b0220; }
-.background-goddardhale-red-600 { background: #1b021f; }
-.background-goddardhale-red-650 { background: #1a011f; }
-.background-goddardhale-red-700 { background: #1a011e; }
-.background-goddardhale-red-750 { background: #19011d; }
-.background-goddardhale-red-800 { background: #18011c; }
-.background-goddardhale-red-850 { background: #18011b; }
-.background-goddardhale-red-900 { background: #17001b; }
-.background-goddardhale-red-950 { background: #17001a; }
+.background-goddardhale-red-50 { background: #fdb0bf; }
+.background-goddardhale-red-100 { background: #fba0b2; }
+.background-goddardhale-red-150 { background: #fa91a6; }
+.background-goddardhale-red-200 { background: #f88199; }
+.background-goddardhale-red-250 { background: #f6728d; }
+.background-goddardhale-red-300 { background: #f46380; }
+.background-goddardhale-red-350 { background: #f25374; }
+.background-goddardhale-red-400 { background: #f14467; }
+.background-goddardhale-red-450 { background: #ef345b; }
+.background-goddardhale-red-500 { background: #ed254e; }
+.background-goddardhale-red-550 { background: #dd2146; }
+.background-goddardhale-red-600 { background: #ce1e3e; }
+.background-goddardhale-red-650 { background: #be1a37; }
+.background-goddardhale-red-700 { background: #ae162f; }
+.background-goddardhale-red-750 { background: #9f1327; }
+.background-goddardhale-red-800 { background: #8f0f1f; }
+.background-goddardhale-red-850 { background: #7f0b17; }
+.background-goddardhale-red-900 { background: #6f0710; }
+.background-goddardhale-red-950 { background: #600408; }
 .background-goddardhale-yellow-50 { background: #fefb7b; }
 .background-goddardhale-yellow-100 { background: #fef777; }
 .background-goddardhale-yellow-150 { background: #fdf474; }
@@ -318,25 +318,25 @@
 .color-goddardhale-purple { color: #574d68; }
 .color-goddardhale-cream { color: #f4fffd; }
 .color-goddardhale-grey { color: #32373b; }
-.color-goddardhale-red-50 { color: #e8dee9; }
-.color-goddardhale-red-100 { color: #d2c5d3; }
-.color-goddardhale-red-150 { color: #bbadbc; }
-.color-goddardhale-red-200 { color: #a494a6; }
-.color-goddardhale-red-250 { color: #8e7c90; }
-.color-goddardhale-red-300 { color: #77647a; }
-.color-goddardhale-red-350 { color: #604b64; }
-.color-goddardhale-red-400 { color: #49334d; }
-.color-goddardhale-red-450 { color: #331a37; }
-.color-goddardhale-red-500 { color: #1c0221; }
-.color-goddardhale-red-550 { color: #1b0220; }
-.color-goddardhale-red-600 { color: #1b021f; }
-.color-goddardhale-red-650 { color: #1a011f; }
-.color-goddardhale-red-700 { color: #1a011e; }
-.color-goddardhale-red-750 { color: #19011d; }
-.color-goddardhale-red-800 { color: #18011c; }
-.color-goddardhale-red-850 { color: #18011b; }
-.color-goddardhale-red-900 { color: #17001b; }
-.color-goddardhale-red-950 { color: #17001a; }
+.color-goddardhale-red-50 { color: #fdb0bf; }
+.color-goddardhale-red-100 { color: #fba0b2; }
+.color-goddardhale-red-150 { color: #fa91a6; }
+.color-goddardhale-red-200 { color: #f88199; }
+.color-goddardhale-red-250 { color: #f6728d; }
+.color-goddardhale-red-300 { color: #f46380; }
+.color-goddardhale-red-350 { color: #f25374; }
+.color-goddardhale-red-400 { color: #f14467; }
+.color-goddardhale-red-450 { color: #ef345b; }
+.color-goddardhale-red-500 { color: #ed254e; }
+.color-goddardhale-red-550 { color: #dd2146; }
+.color-goddardhale-red-600 { color: #ce1e3e; }
+.color-goddardhale-red-650 { color: #be1a37; }
+.color-goddardhale-red-700 { color: #ae162f; }
+.color-goddardhale-red-750 { color: #9f1327; }
+.color-goddardhale-red-800 { color: #8f0f1f; }
+.color-goddardhale-red-850 { color: #7f0b17; }
+.color-goddardhale-red-900 { color: #6f0710; }
+.color-goddardhale-red-950 { color: #600408; }
 .color-goddardhale-yellow-50 { color: #fefb7b; }
 .color-goddardhale-yellow-100 { color: #fef777; }
 .color-goddardhale-yellow-150 { color: #fdf474; }
@@ -468,25 +468,25 @@
 .fill-goddardhale-purple { fill: #574d68; }
 .fill-goddardhale-cream { fill: #f4fffd; }
 .fill-goddardhale-grey { fill: #32373b; }
-.fill-goddardhale-red-50 { fill: #e8dee9; }
-.fill-goddardhale-red-100 { fill: #d2c5d3; }
-.fill-goddardhale-red-150 { fill: #bbadbc; }
-.fill-goddardhale-red-200 { fill: #a494a6; }
-.fill-goddardhale-red-250 { fill: #8e7c90; }
-.fill-goddardhale-red-300 { fill: #77647a; }
-.fill-goddardhale-red-350 { fill: #604b64; }
-.fill-goddardhale-red-400 { fill: #49334d; }
-.fill-goddardhale-red-450 { fill: #331a37; }
-.fill-goddardhale-red-500 { fill: #1c0221; }
-.fill-goddardhale-red-550 { fill: #1b0220; }
-.fill-goddardhale-red-600 { fill: #1b021f; }
-.fill-goddardhale-red-650 { fill: #1a011f; }
-.fill-goddardhale-red-700 { fill: #1a011e; }
-.fill-goddardhale-red-750 { fill: #19011d; }
-.fill-goddardhale-red-800 { fill: #18011c; }
-.fill-goddardhale-red-850 { fill: #18011b; }
-.fill-goddardhale-red-900 { fill: #17001b; }
-.fill-goddardhale-red-950 { fill: #17001a; }
+.fill-goddardhale-red-50 { fill: #fdb0bf; }
+.fill-goddardhale-red-100 { fill: #fba0b2; }
+.fill-goddardhale-red-150 { fill: #fa91a6; }
+.fill-goddardhale-red-200 { fill: #f88199; }
+.fill-goddardhale-red-250 { fill: #f6728d; }
+.fill-goddardhale-red-300 { fill: #f46380; }
+.fill-goddardhale-red-350 { fill: #f25374; }
+.fill-goddardhale-red-400 { fill: #f14467; }
+.fill-goddardhale-red-450 { fill: #ef345b; }
+.fill-goddardhale-red-500 { fill: #ed254e; }
+.fill-goddardhale-red-550 { fill: #dd2146; }
+.fill-goddardhale-red-600 { fill: #ce1e3e; }
+.fill-goddardhale-red-650 { fill: #be1a37; }
+.fill-goddardhale-red-700 { fill: #ae162f; }
+.fill-goddardhale-red-750 { fill: #9f1327; }
+.fill-goddardhale-red-800 { fill: #8f0f1f; }
+.fill-goddardhale-red-850 { fill: #7f0b17; }
+.fill-goddardhale-red-900 { fill: #6f0710; }
+.fill-goddardhale-red-950 { fill: #600408; }
 .fill-goddardhale-yellow-50 { fill: #fefb7b; }
 .fill-goddardhale-yellow-100 { fill: #fef777; }
 .fill-goddardhale-yellow-150 { fill: #fdf474; }
