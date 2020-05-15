@@ -27,7 +27,7 @@ $(function() {
 					//console.log(c)
 					swatches += '<div style="display: inline-block; padding: 1rem;' +
 					'background: ' + hex + '; color: ' + ((c < 100) ? '#fff' : '#000') +
-					 ';">' + color + ': #' + hex + '</div>'
+					 ';">' + color + ': ' + hex + '</div>'
 				})
 				//console.log(swatches)
 				//console.log($('#js-target-swatches-' + slug))
