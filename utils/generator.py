@@ -9,6 +9,13 @@ types = ['background', 'color', 'fill']
 version = '2.0.7'
 css_all = ''
 
+def save_css(path, slug, css, css_min):
+    with open(path + '/../' + slug + '.css', 'w+') as outfile:
+        outfile.write(css)
+    with open(path + '/../' + slug + '.min.css', 'w+') as outfile:
+        outfile.write(css_min)
+    
+
 #   Step 1. Load index.json
 f = open(path + '/../data/index.json')
 index = json.load(f, object_pairs_hook=OrderedDict)
@@ -47,19 +54,11 @@ for title, slug in index.items():
     css_min = css_title + re.sub(r'[\s\n]+', '', css).lower()
     css = css_title + css
 
-    with open(path + '/../' + slug + '.css', 'w+') as outfile:
-        outfile.write(css)
-
-    with open(path + '/../' + slug + '.min.css', 'w+') as outfile:
-        outfile.write(css_min)
+    save_css(path, slug, css, css_min)
 
 #   Step 3. Combine and minify into main files
 css_all_title = '/*! Colors.css ' + version + ' | All Palettes | MIT License | https://github.com/eustasy/colors.css */\n'
 css_min = css_all_title + re.sub(r'[\s\n]+', '', css_all).lower()
-css_all = css_all_title + css_all
+css = css_all_title + css_all
 
-with open(path + '/../colors.css', 'w+') as outfile:
-    outfile.write(css_all)
-
-with open(path + '/../colors.min.css', 'w+') as outfile:
-    outfile.write(css_min)
+save_css(path, 'colors', css, css_min)
