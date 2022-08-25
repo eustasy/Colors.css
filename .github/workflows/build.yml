@@ -1,4 +1,4 @@
-name: Build CSS distributables
+name: Build CSS
 
 on:
   push:
