@@ -74,3 +74,4 @@ exclude_patterns:
   - "**.min.js"
   - "**.pack.js"
   - "**.custom.js"
+  - "colors.css"
