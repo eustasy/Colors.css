@@ -11,7 +11,7 @@
 - Utilities go in `utils`
 - Follow Pythons own style guidelines.
 
-#### CSS
+#### CSS (.css)
 - Non-repository CSS files go in the `css` folder.
 - Color.css files go in the root folder.
 
