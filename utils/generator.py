@@ -44,7 +44,7 @@ for title, slug in index.items():
             # Should look like .color-elementary-orange
             css += '.' + type + '-' + slug + '-' + re.sub('\s+', '-', color).lower()
             # Should look like { color: #f37329; }
-            css += ' { ' + type + ': ' + hex.lower() + '; }\n'
+            css += ' { ' + type + ': var(--' + slug + '; }\n'
 
     #   Step 2. d) Put data into palette.css files
     css_all += css
