@@ -1,0 +1,123 @@
+/*! Colors.css 2.0.7 | Flexoki Palette | MIT License | https://github.com/eustasy/colors.css */
+:root {
+	--flexoki-black: #100f0f;
+	--flexoki-base-950: #1c1b1a;
+	--flexoki-base-900: #282726;
+	--flexoki-base-850: #343331;
+	--flexoki-base-800: #403e3c;
+	--flexoki-base-700: #575653;
+	--flexoki-base-600: #6f6e69;
+	--flexoki-base-500: #878580;
+	--flexoki-base-300: #b7b5ac;
+	--flexoki-base-200: #cecdc3;
+	--flexoki-base-150: #dad8ce;
+	--flexoki-base-100: #e6e4d9;
+	--flexoki-base-50: #f2f0e5;
+	--flexoki-paper: #fffcf0;
+	--flexoki-red-600: #af3029;
+	--flexoki-orange-600: #bc5215;
+	--flexoki-yellow-600: #ad8301;
+	--flexoki-green-600: #66800b;
+	--flexoki-cyan-600: #24837b;
+	--flexoki-blue-600: #205ea6;
+	--flexoki-purple-600: #5e409d;
+	--flexoki-magenta-600: #a02f6f;
+	--flexoki-red-400: #d14d41;
+	--flexoki-orange-400: #da702c;
+	--flexoki-yellow-400: #d0a215;
+	--flexoki-green-400: #879a39;
+	--flexoki-cyan-400: #3aa99f;
+	--flexoki-blue-400: #4385be;
+	--flexoki-purple-400: #8b7ec8;
+	--flexoki-magenta-400: #ce5d97;
+}
+.background-flexoki-black { background: #100f0f; }
+.background-flexoki-base-950 { background: #1c1b1a; }
+.background-flexoki-base-900 { background: #282726; }
+.background-flexoki-base-850 { background: #343331; }
+.background-flexoki-base-800 { background: #403e3c; }
+.background-flexoki-base-700 { background: #575653; }
+.background-flexoki-base-600 { background: #6f6e69; }
+.background-flexoki-base-500 { background: #878580; }
+.background-flexoki-base-300 { background: #b7b5ac; }
+.background-flexoki-base-200 { background: #cecdc3; }
+.background-flexoki-base-150 { background: #dad8ce; }
+.background-flexoki-base-100 { background: #e6e4d9; }
+.background-flexoki-base-50 { background: #f2f0e5; }
+.background-flexoki-paper { background: #fffcf0; }
+.background-flexoki-red-600 { background: #af3029; }
+.background-flexoki-orange-600 { background: #bc5215; }
+.background-flexoki-yellow-600 { background: #ad8301; }
+.background-flexoki-green-600 { background: #66800b; }
+.background-flexoki-cyan-600 { background: #24837b; }
+.background-flexoki-blue-600 { background: #205ea6; }
+.background-flexoki-purple-600 { background: #5e409d; }
+.background-flexoki-magenta-600 { background: #a02f6f; }
+.background-flexoki-red-400 { background: #d14d41; }
+.background-flexoki-orange-400 { background: #da702c; }
+.background-flexoki-yellow-400 { background: #d0a215; }
+.background-flexoki-green-400 { background: #879a39; }
+.background-flexoki-cyan-400 { background: #3aa99f; }
+.background-flexoki-blue-400 { background: #4385be; }
+.background-flexoki-purple-400 { background: #8b7ec8; }
+.background-flexoki-magenta-400 { background: #ce5d97; }
+.color-flexoki-black { color: #100f0f; }
+.color-flexoki-base-950 { color: #1c1b1a; }
+.color-flexoki-base-900 { color: #282726; }
+.color-flexoki-base-850 { color: #343331; }
+.color-flexoki-base-800 { color: #403e3c; }
+.color-flexoki-base-700 { color: #575653; }
+.color-flexoki-base-600 { color: #6f6e69; }
+.color-flexoki-base-500 { color: #878580; }
+.color-flexoki-base-300 { color: #b7b5ac; }
+.color-flexoki-base-200 { color: #cecdc3; }
+.color-flexoki-base-150 { color: #dad8ce; }
+.color-flexoki-base-100 { color: #e6e4d9; }
+.color-flexoki-base-50 { color: #f2f0e5; }
+.color-flexoki-paper { color: #fffcf0; }
+.color-flexoki-red-600 { color: #af3029; }
+.color-flexoki-orange-600 { color: #bc5215; }
+.color-flexoki-yellow-600 { color: #ad8301; }
+.color-flexoki-green-600 { color: #66800b; }
+.color-flexoki-cyan-600 { color: #24837b; }
+.color-flexoki-blue-600 { color: #205ea6; }
+.color-flexoki-purple-600 { color: #5e409d; }
+.color-flexoki-magenta-600 { color: #a02f6f; }
+.color-flexoki-red-400 { color: #d14d41; }
+.color-flexoki-orange-400 { color: #da702c; }
+.color-flexoki-yellow-400 { color: #d0a215; }
+.color-flexoki-green-400 { color: #879a39; }
+.color-flexoki-cyan-400 { color: #3aa99f; }
+.color-flexoki-blue-400 { color: #4385be; }
+.color-flexoki-purple-400 { color: #8b7ec8; }
+.color-flexoki-magenta-400 { color: #ce5d97; }
+.fill-flexoki-black { fill: #100f0f; }
+.fill-flexoki-base-950 { fill: #1c1b1a; }
+.fill-flexoki-base-900 { fill: #282726; }
+.fill-flexoki-base-850 { fill: #343331; }
+.fill-flexoki-base-800 { fill: #403e3c; }
+.fill-flexoki-base-700 { fill: #575653; }
+.fill-flexoki-base-600 { fill: #6f6e69; }
+.fill-flexoki-base-500 { fill: #878580; }
+.fill-flexoki-base-300 { fill: #b7b5ac; }
+.fill-flexoki-base-200 { fill: #cecdc3; }
+.fill-flexoki-base-150 { fill: #dad8ce; }
+.fill-flexoki-base-100 { fill: #e6e4d9; }
+.fill-flexoki-base-50 { fill: #f2f0e5; }
+.fill-flexoki-paper { fill: #fffcf0; }
+.fill-flexoki-red-600 { fill: #af3029; }
+.fill-flexoki-orange-600 { fill: #bc5215; }
+.fill-flexoki-yellow-600 { fill: #ad8301; }
+.fill-flexoki-green-600 { fill: #66800b; }
+.fill-flexoki-cyan-600 { fill: #24837b; }
+.fill-flexoki-blue-600 { fill: #205ea6; }
+.fill-flexoki-purple-600 { fill: #5e409d; }
+.fill-flexoki-magenta-600 { fill: #a02f6f; }
+.fill-flexoki-red-400 { fill: #d14d41; }
+.fill-flexoki-orange-400 { fill: #da702c; }
+.fill-flexoki-yellow-400 { fill: #d0a215; }
+.fill-flexoki-green-400 { fill: #879a39; }
+.fill-flexoki-cyan-400 { fill: #3aa99f; }
+.fill-flexoki-blue-400 { fill: #4385be; }
+.fill-flexoki-purple-400 { fill: #8b7ec8; }
+.fill-flexoki-magenta-400 { fill: #ce5d97; }
