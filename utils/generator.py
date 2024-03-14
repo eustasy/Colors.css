@@ -6,7 +6,7 @@ from collections import OrderedDict
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
 types = ['background', 'color', 'fill']
-version = '2.0.7'
+version = '2.0.9'
 css_all = ''
 
 def save_css(path, slug, suffix, css):
