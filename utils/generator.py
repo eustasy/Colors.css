@@ -58,6 +58,7 @@ for title, slug in index.items():
     save_css(path, slug, '.min.css', css_min)
 
 #   Step 3. Combine and minify into main files
+slug = 'colors'
 css_all_title = '/*! Colors.css ' + version + ' | All Palettes | MIT License | https://github.com/eustasy/colors.css */\n'
 css_min = css_all_title + re.sub(r'[\s\n]+', '', css_all).lower()
 css = css_all_title + css_all
