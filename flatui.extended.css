@@ -1,4 +1,4 @@
-/*! Colors.css 2.0.9 | Flat UI Palette | MIT License | https://github.com/eustasy/colors.css */
+/*! Colors.css 2.0.9 | Flat UI Palette (Extended) | MIT License | https://github.com/eustasy/colors.css */
 :root {
 	--flatui-turquoise: #1abc9c;
 	--flatui-green-sea: #16a085;
@@ -141,3 +141,63 @@
 .outline-color-flatui-silver { outline-color: var(--flatui-silver); }
 .outline-color-flatui-concrete { outline-color: var(--flatui-concrete); }
 .outline-color-flatui-asbestos { outline-color: var(--flatui-asbestos); }
+.text-decoration-color-flatui-turquoise { text-decoration-color: var(--flatui-turquoise); }
+.text-decoration-color-flatui-green-sea { text-decoration-color: var(--flatui-green-sea); }
+.text-decoration-color-flatui-emerald { text-decoration-color: var(--flatui-emerald); }
+.text-decoration-color-flatui-nephritis { text-decoration-color: var(--flatui-nephritis); }
+.text-decoration-color-flatui-peter-river { text-decoration-color: var(--flatui-peter-river); }
+.text-decoration-color-flatui-belize-hole { text-decoration-color: var(--flatui-belize-hole); }
+.text-decoration-color-flatui-amethyst { text-decoration-color: var(--flatui-amethyst); }
+.text-decoration-color-flatui-wisteria { text-decoration-color: var(--flatui-wisteria); }
+.text-decoration-color-flatui-wet-asphalt { text-decoration-color: var(--flatui-wet-asphalt); }
+.text-decoration-color-flatui-midnight-blue { text-decoration-color: var(--flatui-midnight-blue); }
+.text-decoration-color-flatui-sun-flower { text-decoration-color: var(--flatui-sun-flower); }
+.text-decoration-color-flatui-orange { text-decoration-color: var(--flatui-orange); }
+.text-decoration-color-flatui-carrot { text-decoration-color: var(--flatui-carrot); }
+.text-decoration-color-flatui-pumpkin { text-decoration-color: var(--flatui-pumpkin); }
+.text-decoration-color-flatui-alizarin { text-decoration-color: var(--flatui-alizarin); }
+.text-decoration-color-flatui-pomegranate { text-decoration-color: var(--flatui-pomegranate); }
+.text-decoration-color-flatui-clouds { text-decoration-color: var(--flatui-clouds); }
+.text-decoration-color-flatui-silver { text-decoration-color: var(--flatui-silver); }
+.text-decoration-color-flatui-concrete { text-decoration-color: var(--flatui-concrete); }
+.text-decoration-color-flatui-asbestos { text-decoration-color: var(--flatui-asbestos); }
+.caret-color-flatui-turquoise { caret-color: var(--flatui-turquoise); }
+.caret-color-flatui-green-sea { caret-color: var(--flatui-green-sea); }
+.caret-color-flatui-emerald { caret-color: var(--flatui-emerald); }
+.caret-color-flatui-nephritis { caret-color: var(--flatui-nephritis); }
+.caret-color-flatui-peter-river { caret-color: var(--flatui-peter-river); }
+.caret-color-flatui-belize-hole { caret-color: var(--flatui-belize-hole); }
+.caret-color-flatui-amethyst { caret-color: var(--flatui-amethyst); }
+.caret-color-flatui-wisteria { caret-color: var(--flatui-wisteria); }
+.caret-color-flatui-wet-asphalt { caret-color: var(--flatui-wet-asphalt); }
+.caret-color-flatui-midnight-blue { caret-color: var(--flatui-midnight-blue); }
+.caret-color-flatui-sun-flower { caret-color: var(--flatui-sun-flower); }
+.caret-color-flatui-orange { caret-color: var(--flatui-orange); }
+.caret-color-flatui-carrot { caret-color: var(--flatui-carrot); }
+.caret-color-flatui-pumpkin { caret-color: var(--flatui-pumpkin); }
+.caret-color-flatui-alizarin { caret-color: var(--flatui-alizarin); }
+.caret-color-flatui-pomegranate { caret-color: var(--flatui-pomegranate); }
+.caret-color-flatui-clouds { caret-color: var(--flatui-clouds); }
+.caret-color-flatui-silver { caret-color: var(--flatui-silver); }
+.caret-color-flatui-concrete { caret-color: var(--flatui-concrete); }
+.caret-color-flatui-asbestos { caret-color: var(--flatui-asbestos); }
+.accent-color-flatui-turquoise { accent-color: var(--flatui-turquoise); }
+.accent-color-flatui-green-sea { accent-color: var(--flatui-green-sea); }
+.accent-color-flatui-emerald { accent-color: var(--flatui-emerald); }
+.accent-color-flatui-nephritis { accent-color: var(--flatui-nephritis); }
+.accent-color-flatui-peter-river { accent-color: var(--flatui-peter-river); }
+.accent-color-flatui-belize-hole { accent-color: var(--flatui-belize-hole); }
+.accent-color-flatui-amethyst { accent-color: var(--flatui-amethyst); }
+.accent-color-flatui-wisteria { accent-color: var(--flatui-wisteria); }
+.accent-color-flatui-wet-asphalt { accent-color: var(--flatui-wet-asphalt); }
+.accent-color-flatui-midnight-blue { accent-color: var(--flatui-midnight-blue); }
+.accent-color-flatui-sun-flower { accent-color: var(--flatui-sun-flower); }
+.accent-color-flatui-orange { accent-color: var(--flatui-orange); }
+.accent-color-flatui-carrot { accent-color: var(--flatui-carrot); }
+.accent-color-flatui-pumpkin { accent-color: var(--flatui-pumpkin); }
+.accent-color-flatui-alizarin { accent-color: var(--flatui-alizarin); }
+.accent-color-flatui-pomegranate { accent-color: var(--flatui-pomegranate); }
+.accent-color-flatui-clouds { accent-color: var(--flatui-clouds); }
+.accent-color-flatui-silver { accent-color: var(--flatui-silver); }
+.accent-color-flatui-concrete { accent-color: var(--flatui-concrete); }
+.accent-color-flatui-asbestos { accent-color: var(--flatui-asbestos); }

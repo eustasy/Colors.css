@@ -1,4 +1,4 @@
-/*! Colors.css 2.0.9 | How to elementary Palette | MIT License | https://github.com/eustasy/colors.css */
+/*! Colors.css 2.0.9 | How to elementary Palette (Extended) | MIT License | https://github.com/eustasy/colors.css */
 :root {
 	--howtoelementary-dark-text: #212121;
 	--howtoelementary-light-text: #fefefe;
@@ -106,3 +106,48 @@
 .outline-color-howtoelementary-information { outline-color: var(--howtoelementary-information); }
 .outline-color-howtoelementary-information-text { outline-color: var(--howtoelementary-information-text); }
 .outline-color-howtoelementary-announcement { outline-color: var(--howtoelementary-announcement); }
+.text-decoration-color-howtoelementary-dark-text { text-decoration-color: var(--howtoelementary-dark-text); }
+.text-decoration-color-howtoelementary-light-text { text-decoration-color: var(--howtoelementary-light-text); }
+.text-decoration-color-howtoelementary-light-background { text-decoration-color: var(--howtoelementary-light-background); }
+.text-decoration-color-howtoelementary-medium-background { text-decoration-color: var(--howtoelementary-medium-background); }
+.text-decoration-color-howtoelementary-dark-background { text-decoration-color: var(--howtoelementary-dark-background); }
+.text-decoration-color-howtoelementary-error { text-decoration-color: var(--howtoelementary-error); }
+.text-decoration-color-howtoelementary-error-text { text-decoration-color: var(--howtoelementary-error-text); }
+.text-decoration-color-howtoelementary-warning { text-decoration-color: var(--howtoelementary-warning); }
+.text-decoration-color-howtoelementary-warning-text { text-decoration-color: var(--howtoelementary-warning-text); }
+.text-decoration-color-howtoelementary-warning-2 { text-decoration-color: var(--howtoelementary-warning-2); }
+.text-decoration-color-howtoelementary-success { text-decoration-color: var(--howtoelementary-success); }
+.text-decoration-color-howtoelementary-success-text { text-decoration-color: var(--howtoelementary-success-text); }
+.text-decoration-color-howtoelementary-information { text-decoration-color: var(--howtoelementary-information); }
+.text-decoration-color-howtoelementary-information-text { text-decoration-color: var(--howtoelementary-information-text); }
+.text-decoration-color-howtoelementary-announcement { text-decoration-color: var(--howtoelementary-announcement); }
+.caret-color-howtoelementary-dark-text { caret-color: var(--howtoelementary-dark-text); }
+.caret-color-howtoelementary-light-text { caret-color: var(--howtoelementary-light-text); }
+.caret-color-howtoelementary-light-background { caret-color: var(--howtoelementary-light-background); }
+.caret-color-howtoelementary-medium-background { caret-color: var(--howtoelementary-medium-background); }
+.caret-color-howtoelementary-dark-background { caret-color: var(--howtoelementary-dark-background); }
+.caret-color-howtoelementary-error { caret-color: var(--howtoelementary-error); }
+.caret-color-howtoelementary-error-text { caret-color: var(--howtoelementary-error-text); }
+.caret-color-howtoelementary-warning { caret-color: var(--howtoelementary-warning); }
+.caret-color-howtoelementary-warning-text { caret-color: var(--howtoelementary-warning-text); }
+.caret-color-howtoelementary-warning-2 { caret-color: var(--howtoelementary-warning-2); }
+.caret-color-howtoelementary-success { caret-color: var(--howtoelementary-success); }
+.caret-color-howtoelementary-success-text { caret-color: var(--howtoelementary-success-text); }
+.caret-color-howtoelementary-information { caret-color: var(--howtoelementary-information); }
+.caret-color-howtoelementary-information-text { caret-color: var(--howtoelementary-information-text); }
+.caret-color-howtoelementary-announcement { caret-color: var(--howtoelementary-announcement); }
+.accent-color-howtoelementary-dark-text { accent-color: var(--howtoelementary-dark-text); }
+.accent-color-howtoelementary-light-text { accent-color: var(--howtoelementary-light-text); }
+.accent-color-howtoelementary-light-background { accent-color: var(--howtoelementary-light-background); }
+.accent-color-howtoelementary-medium-background { accent-color: var(--howtoelementary-medium-background); }
+.accent-color-howtoelementary-dark-background { accent-color: var(--howtoelementary-dark-background); }
+.accent-color-howtoelementary-error { accent-color: var(--howtoelementary-error); }
+.accent-color-howtoelementary-error-text { accent-color: var(--howtoelementary-error-text); }
+.accent-color-howtoelementary-warning { accent-color: var(--howtoelementary-warning); }
+.accent-color-howtoelementary-warning-text { accent-color: var(--howtoelementary-warning-text); }
+.accent-color-howtoelementary-warning-2 { accent-color: var(--howtoelementary-warning-2); }
+.accent-color-howtoelementary-success { accent-color: var(--howtoelementary-success); }
+.accent-color-howtoelementary-success-text { accent-color: var(--howtoelementary-success-text); }
+.accent-color-howtoelementary-information { accent-color: var(--howtoelementary-information); }
+.accent-color-howtoelementary-information-text { accent-color: var(--howtoelementary-information-text); }
+.accent-color-howtoelementary-announcement { accent-color: var(--howtoelementary-announcement); }

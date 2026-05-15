@@ -1,4 +1,4 @@
-/*! Colors.css 2.0.9 | eustasy Palette | MIT License | https://github.com/eustasy/colors.css */
+/*! Colors.css 2.0.9 | eustasy Palette (Extended) | MIT License | https://github.com/eustasy/colors.css */
 :root {
 	--eustasy-dark-text: #212121;
 	--eustasy-light-text: #fefefe;
@@ -99,3 +99,45 @@
 .outline-color-eustasy-success-text { outline-color: var(--eustasy-success-text); }
 .outline-color-eustasy-information { outline-color: var(--eustasy-information); }
 .outline-color-eustasy-information-text { outline-color: var(--eustasy-information-text); }
+.text-decoration-color-eustasy-dark-text { text-decoration-color: var(--eustasy-dark-text); }
+.text-decoration-color-eustasy-light-text { text-decoration-color: var(--eustasy-light-text); }
+.text-decoration-color-eustasy-light-background { text-decoration-color: var(--eustasy-light-background); }
+.text-decoration-color-eustasy-medium-background { text-decoration-color: var(--eustasy-medium-background); }
+.text-decoration-color-eustasy-dark-background { text-decoration-color: var(--eustasy-dark-background); }
+.text-decoration-color-eustasy-error { text-decoration-color: var(--eustasy-error); }
+.text-decoration-color-eustasy-error-text { text-decoration-color: var(--eustasy-error-text); }
+.text-decoration-color-eustasy-warning { text-decoration-color: var(--eustasy-warning); }
+.text-decoration-color-eustasy-warning-text { text-decoration-color: var(--eustasy-warning-text); }
+.text-decoration-color-eustasy-warning-2 { text-decoration-color: var(--eustasy-warning-2); }
+.text-decoration-color-eustasy-success { text-decoration-color: var(--eustasy-success); }
+.text-decoration-color-eustasy-success-text { text-decoration-color: var(--eustasy-success-text); }
+.text-decoration-color-eustasy-information { text-decoration-color: var(--eustasy-information); }
+.text-decoration-color-eustasy-information-text { text-decoration-color: var(--eustasy-information-text); }
+.caret-color-eustasy-dark-text { caret-color: var(--eustasy-dark-text); }
+.caret-color-eustasy-light-text { caret-color: var(--eustasy-light-text); }
+.caret-color-eustasy-light-background { caret-color: var(--eustasy-light-background); }
+.caret-color-eustasy-medium-background { caret-color: var(--eustasy-medium-background); }
+.caret-color-eustasy-dark-background { caret-color: var(--eustasy-dark-background); }
+.caret-color-eustasy-error { caret-color: var(--eustasy-error); }
+.caret-color-eustasy-error-text { caret-color: var(--eustasy-error-text); }
+.caret-color-eustasy-warning { caret-color: var(--eustasy-warning); }
+.caret-color-eustasy-warning-text { caret-color: var(--eustasy-warning-text); }
+.caret-color-eustasy-warning-2 { caret-color: var(--eustasy-warning-2); }
+.caret-color-eustasy-success { caret-color: var(--eustasy-success); }
+.caret-color-eustasy-success-text { caret-color: var(--eustasy-success-text); }
+.caret-color-eustasy-information { caret-color: var(--eustasy-information); }
+.caret-color-eustasy-information-text { caret-color: var(--eustasy-information-text); }
+.accent-color-eustasy-dark-text { accent-color: var(--eustasy-dark-text); }
+.accent-color-eustasy-light-text { accent-color: var(--eustasy-light-text); }
+.accent-color-eustasy-light-background { accent-color: var(--eustasy-light-background); }
+.accent-color-eustasy-medium-background { accent-color: var(--eustasy-medium-background); }
+.accent-color-eustasy-dark-background { accent-color: var(--eustasy-dark-background); }
+.accent-color-eustasy-error { accent-color: var(--eustasy-error); }
+.accent-color-eustasy-error-text { accent-color: var(--eustasy-error-text); }
+.accent-color-eustasy-warning { accent-color: var(--eustasy-warning); }
+.accent-color-eustasy-warning-text { accent-color: var(--eustasy-warning-text); }
+.accent-color-eustasy-warning-2 { accent-color: var(--eustasy-warning-2); }
+.accent-color-eustasy-success { accent-color: var(--eustasy-success); }
+.accent-color-eustasy-success-text { accent-color: var(--eustasy-success-text); }
+.accent-color-eustasy-information { accent-color: var(--eustasy-information); }
+.accent-color-eustasy-information-text { accent-color: var(--eustasy-information-text); }
