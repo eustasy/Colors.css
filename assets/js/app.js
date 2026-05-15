@@ -497,8 +497,39 @@
     }
   }
 
+  // ---------- Page chrome that tracks the palette set ----------
+  // Keeps hardcoded counts/lists in index.html in sync with COLORS_DATA,
+  // so adding a palette only means adding its data files.
+  function numberWord(n) {
+    const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
+      'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+      'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+    return words[n] || String(n);
+  }
+
+  function renderChrome() {
+    const slugs = Object.values(index);
+    const n = slugs.length;
+
+    const search = $('#search');
+    if (search) search.placeholder = `Search ${n} palettes…`;
+
+    $$('[data-palette-count-word]').forEach(el => { el.textContent = numberWord(n); });
+
+    $$('[data-palette-slugs]').forEach(el => {
+      el.innerHTML = '';
+      slugs.forEach((slug, i) => {
+        if (i > 0) el.appendChild(document.createTextNode(i === n - 1 ? ', or ' : ', '));
+        const code = document.createElement('code');
+        code.textContent = slug;
+        el.appendChild(code);
+      });
+    });
+  }
+
   // ---------- Init ----------
   function init() {
+    renderChrome();
     renderPaletteNav();
     for (const slug of Object.values(index)) renderPalette(slug);
     wire();

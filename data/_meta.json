@@ -1,0 +1,55 @@
+{
+	"baseline": {
+		"name": "Baseline",
+		"description": "A grayscale baseline — pure white, black, and 10 shades in between. Numeric and word aliases (e.g. `5` and `five`) make these legible in any rule.",
+		"source": null
+	},
+	"elementary": {
+		"name": "elementary",
+		"description": "The color palette behind elementary OS — fruit-named primaries with 5 tonal steps each, plus paired Text values for accessible body copy.",
+		"source": {
+			"label": "elementary HIG",
+			"url": "https://docs.elementary.io/hig"
+		}
+	},
+	"flatui": {
+		"name": "Flat UI",
+		"description": "The flat-design colors popularised by Flat UI Colors — 20 named hues with no shade variants.",
+		"source": {
+			"label": "flatuicolors.com",
+			"url": "https://flatuicolors.com/"
+		}
+	},
+	"goddardhale": {
+		"name": "Goddard & Hale",
+		"description": "Lewis Goddard's personal palette — five accent hues plus warm neutrals, expanded into 20 perceptually-graded shades.",
+		"source": {
+			"label": "Lewis Goddard",
+			"url": "https://lewisgoddard.com/"
+		}
+	},
+	"flexoki": {
+		"name": "Flexoki",
+		"description": "Steph Ango's inky color scheme for prose and code, derived in Oklab for perceptual evenness across light and dark modes.",
+		"source": {
+			"label": "stephango.com/flexoki",
+			"url": "https://stephango.com/flexoki"
+		}
+	},
+	"material": {
+		"name": "Material",
+		"description": "Google's Material Design palette — 19 hues, each with a 50→900 ramp plus four A-prefixed accent tones.",
+		"source": {
+			"label": "Material Design",
+			"url": "https://m2.material.io/design/color/the-color-system.html"
+		}
+	},
+	"ubuntu": {
+		"name": "Ubuntu",
+		"description": "Canonical's Ubuntu brand colors — the famous Orange and four Aubergines with 13 tonal steps each.",
+		"source": {
+			"label": "design.ubuntu.com",
+			"url": "https://design.ubuntu.com/brand/"
+		}
+	}
+}
