@@ -4,11 +4,8 @@
 [![Maintainability](https://qlty.sh/gh/eustasy/projects/Colors.css/maintainability.svg)](https://qlty.sh/gh/eustasy/projects/Colors.css)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/eustasy/Colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
-A selection of colors stylesheets, with backgrounds and fills too.
-
----
-
-Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
+A selection of colors stylesheets, with backgrounds and fills too.  
+_Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)_
 
 ## All palettes
 
