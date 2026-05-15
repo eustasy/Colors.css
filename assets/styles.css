@@ -683,7 +683,7 @@ body[data-density="spacious"] .swatch { height: 104px; }
   position: fixed;
   bottom: 1.5rem;
   left: 50%;
-  transform: translateX(-50%) translateY(120%);
+  transform: translateX(-50%) translateY(calc(100% + 2.5rem));
   opacity: 0;
   visibility: hidden;
   background: var(--tx);
