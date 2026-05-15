@@ -10,4 +10,28 @@ A selection of colors stylesheets, with backgrounds and fills too.
 
 Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
+## All palettes
+
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous">`
+
+## Individual palettes
+
+Replace `{palette}` with one of: `baseline`, `elementary`, `eustasy`, `flatui`, `flexoki`, `goddardhale`, `howtoelementary`, `material`, `ubuntu`
+
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous">`
+
+## Using colors
+
+Each color is available as a CSS custom property and as utility classes for `background`, `color`, and `fill`:
+
+```css
+/* CSS variable */
+var(--flatui-belize-hole)
+```
+
+```html
+<!-- Utility classes -->
+<div class="background-flatui-belize-hole">...</div>
+<p class="color-flatui-belize-hole">...</p>
+<svg><path class="fill-flatui-belize-hole" /></svg>
+```

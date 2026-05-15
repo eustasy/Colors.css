@@ -31,6 +31,14 @@
 			<div class="whole smablet-half">
 				<p class="text-left">Colors.css is a small CSS file for Flat UI Colors in any application without loading a larger material design stylesheet. You might want to take a look at the <a href="colors.css">unminified version</a> if you want to understand what it is doing.</p>
 				<textarea class="code rounded">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous"&gt;</textarea>
+				<p class="text-left">To load a single palette, replace <code class="code display-inline-block">{palette}</code> with one of: <code class="code display-inline-block">baseline</code>, <code class="code display-inline-block">elementary</code>, <code class="code display-inline-block">eustasy</code>, <code class="code display-inline-block">flatui</code>, <code class="code display-inline-block">flexoki</code>, <code class="code display-inline-block">goddardhale</code>, <code class="code display-inline-block">howtoelementary</code>, <code class="code display-inline-block">material</code>, <code class="code display-inline-block">ubuntu</code></p>
+				<textarea class="code rounded">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous"&gt;</textarea>
+				<p class="text-left">Colors are available as CSS custom properties, and as utility classes for <code class="code display-inline-block">background</code>, <code class="code display-inline-block">color</code>, and <code class="code display-inline-block">fill</code>:</p>
+				<textarea class="code rounded">var(--flatui-belize-hole)
+
+class="background-flatui-belize-hole"
+class="color-flatui-belize-hole"
+class="fill-flatui-belize-hole"</textarea>
 				<p>
 					<a class="button rounded display-inline-block background-white color-belize-hole" href="https://www.jsdelivr.com/package/gh/eustasy/Colors.css">CDN Delivery</a>
 					<a class="button rounded display-inline-block background-white color-belize-hole" href="https://github.com/eustasy/Colors.css">GitHub</a>

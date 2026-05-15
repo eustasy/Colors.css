@@ -108,6 +108,10 @@ a {
 .text-left { text-align: left; }
 
 .display-inline-block { display: inline-block; }
+code.display-inline-block {
+	line-height: 1.4;
+	padding: .35rem .5rem;
+}
 
 .rounded { border-radius: 2px; }
 
