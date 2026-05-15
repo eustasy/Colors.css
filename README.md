@@ -2,7 +2,7 @@
 
 [![Build Dist](https://github.com/eustasy/Colors.css/actions/workflows/build.yml/badge.svg)](https://github.com/eustasy/Colors.css/actions/workflows/build.yml)
 [![Normal Checks](https://github.com/eustasy/Colors.css/actions/workflows/normal.yml/badge.svg)](https://github.com/eustasy/Colors.css/actions/workflows/normal.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/9f31a0fa7e27073286c5/maintainability)](https://codeclimate.com/github/eustasy/Colors.css/maintainability)
+[![Maintainability](https://qlty.sh/gh/eustasy/projects/Colors.css/maintainability.svg)](https://qlty.sh/gh/eustasy/projects/Colors.css)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/eustasy/Colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
 A selection of colors stylesheets, with backgrounds and fills too.
