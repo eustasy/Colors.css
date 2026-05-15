@@ -1,78 +1,223 @@
-<!DocType html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta http-equiv="cleartype" content="on">
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-		<meta name="keywords" content="Colors.css color palettes css custom properties utility classes eustasy">
-		<meta name="description" content="Colors.css is a collection of CSS color palettes, available as custom properties and utility classes for any project.">
-		<title>Colors.css &nbsp;&middot;&nbsp; eustasy</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/necolas/normalize.css@8/normalize.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lusitana|Source+Code+Pro" data-noprefix>
-		<link rel="stylesheet" href="css/grid.min.css">
-		<link rel="stylesheet" href="css/labs.css">
-		<link rel="stylesheet" href="colors.min.css">
-	</head>
-	<body>
-		<a href="https://github.com/eustasy/Colors.css" class="github-corner" aria-label="View source on Github">
-			<svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
-				<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-				<path class="octo-arm" fill="currentColor" style="transform-origin: 130px 106px;" d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"></path>
-				<path class="octo-body" fill="currentColor" d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"></path>
-			</svg>
-		</a>
-		<section class="whole grid">
-			<h1>Colors.css</h1>
-			<p class="sub-title">by <a href="https://eustasy.org/">eustasy</a></p>
-			<div class="whole smablet-half">
-				<p class="text-left">Colors.css is a collection of CSS color palettes, available as custom properties and utility classes for any project. Take a look at the <a href="colors.css">unminified version</a> to see what it includes.</p>
-				<textarea class="code rounded">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous"&gt;</textarea>
-				<p class="text-left">To load a single palette, replace <code class="code display-inline-block">{palette}</code> with one of: <code class="code display-inline-block">baseline</code>, <code class="code display-inline-block">elementary</code>, <code class="code display-inline-block">eustasy</code>, <code class="code display-inline-block">flatui</code>, <code class="code display-inline-block">flexoki</code>, <code class="code display-inline-block">goddardhale</code>, <code class="code display-inline-block">howtoelementary</code>, <code class="code display-inline-block">material</code>, <code class="code display-inline-block">ubuntu</code></p>
-				<textarea class="code rounded">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous"&gt;</textarea>
-			</div>
-			<div class="whole smablet-half">
-				<p class="text-left">Colors are available as CSS custom properties and utility classes for <code class="code display-inline-block">background</code>, <code class="code display-inline-block">color</code>, <code class="code display-inline-block">fill</code>, <code class="code display-inline-block">border-color</code>, <code class="code display-inline-block">stroke</code>, <code class="code display-inline-block">outline-color</code>, <code class="code display-inline-block">text-decoration-color</code>, <code class="code display-inline-block">caret-color</code>, and <code class="code display-inline-block">accent-color</code>:</p>
-				<textarea class="code rounded">var(--flatui-belize-hole)
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colors.css — a collection of CSS color palettes by eustasy</title>
+<meta name="description" content="Colors.css is a collection of CSS color palettes available as custom properties and utility classes. Browse Flexoki, Material, Ubuntu, elementary, and more — copy any value as hex, rgb, hsl, oklch, or display-p3.">
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Colors.css" />
+<link rel="manifest" href="assets/site.webmanifest" />
+<link rel="stylesheet" href="assets/styles.css">
+<script>
+  // Theme bootstrap (avoid FOUC)
+  (function(){
+    var t = localStorage.getItem('colorscss-theme');
+    if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+</head>
+<body>
 
-class="background-flatui-belize-hole"
-class="color-flatui-belize-hole"
-class="fill-flatui-belize-hole"
-class="border-color-flatui-belize-hole"
-class="stroke-flatui-belize-hole"
-class="outline-color-flatui-belize-hole"
-class="text-decoration-color-flatui-belize-hole"
-class="caret-color-flatui-belize-hole"
-class="accent-color-flatui-belize-hole"</textarea>
-				<p>
-					<a class="button rounded display-inline-block background-white color-belize-hole" href="https://www.jsdelivr.com/package/gh/eustasy/Colors.css">CDN Delivery</a>
-					<a class="button rounded display-inline-block background-white color-belize-hole" href="https://github.com/eustasy/Colors.css">GitHub</a>
-				</p>
-			</div>
-		</section>
+<header class="site-header">
+  <a class="brand" href="#top">Colors<span class="dot">.</span>css</a>
+  <nav>
+    <a href="#install">Install</a>
+    <a href="#usage">Usage</a>
+    <a href="#palettes">Palettes</a>
+  </nav>
+  <div class="header-tools">
+    <div class="search">
+      <input type="search" id="search" placeholder="Search 9 palettes…" aria-label="Search colors and palettes">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7"/>
+        <path d="M21 21l-4.3-4.3"/>
+      </svg>
+    </div>
+    <select class="format-select" id="format-select" title="Default copy format when clicking a swatch">
+      <option value="hex">Click copies&nbsp;·&nbsp;HEX</option>
+      <option value="var">Click copies&nbsp;·&nbsp;var()</option>
+      <option value="class">Click copies&nbsp;·&nbsp;class</option>
+      <option value="rgb">Click copies&nbsp;·&nbsp;RGB</option>
+      <option value="hsl">Click copies&nbsp;·&nbsp;HSL</option>
+      <option value="oklch">Click copies&nbsp;·&nbsp;OKLCH</option>
+      <option value="p3">Click copies&nbsp;·&nbsp;Display-P3</option>
+    </select>
+    <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3v1M12 20v1M3 12h1M20 12h1M5.6 5.6l.7.7M17.7 17.7l.7.7M5.6 18.4l.7-.7M17.7 6.3l.7-.7"/>
+        <circle cx="12" cy="12" r="4"/>
+      </svg>
+    </button>
+  </div>
+</header>
 
-		<hr class="section-breaker">
+<main id="top">
 
-		<div id="js-target-swatches"></div>
+  <section class="hero container">
+    <h1>A library of <em>color palettes</em><br>for any CSS project.</h1>
+    <p class="lede">
+      Custom properties and utility classes for nine palettes — Flexoki, Material, Ubuntu, elementary, and more.
+      <span class="accent">Drop one line in your <code>&lt;head&gt;</code>; ship.</span>
+    </p>
+    <div class="hero-meta">
+      <a href="https://github.com/eustasy/Colors.css">GitHub</a>
+      <span class="pip"></span>
+      <a href="https://www.jsdelivr.com/package/gh/eustasy/Colors.css">jsDelivr CDN</a>
+      <span class="pip"></span>
+      <span class="hero-meta-item">
+        <a href="https://github.com/eustasy/Colors.css/releases">Releases</a>
+        <span class="ver">v2</span>
+      </span>
+      <span class="pip"></span>
+      <a href="https://github.com/eustasy/Colors.css/blob/master/LICENSE.md">MIT licensed</a>
+    </div>
+  </section>
 
-		<footer>
-			<p>
-				<a href="https://github.com/eustasy/Colors.css/blob/master/LICENSE.md">MIT License</a> &nbsp;·&nbsp;
-				<a href="https://github.com/eustasy/Colors.css">GitHub</a> &nbsp;·&nbsp;
-				<a href="https://github.com/eustasy/Colors.css/releases">Releases</a>
-			</p>
-		</footer>
+  <hr>
 
-		<script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3/dist/jquery.min.js"></script>
-		<script src="js/swatches.js"></script>
+  <section class="section container" id="install">
+    <h2><span class="num">01</span>Install</h2>
+    <p class="section-lede">Two ways to pull Colors.css into a project. The single-palette files are roughly a tenth the size of the bundle, so reach for them when you only need one.</p>
 
-		<script src="https://cdn.jsdelivr.net/gh/jackmoore/autosize@4/dist/autosize.min.js"></script>
-		<script>$(function(){autosize($('textarea'));});</script>
+    <div class="install-grid">
+      <div class="install-block">
+        <h3>Everything · all nine palettes</h3>
+        <div class="codeblock" data-copy-src='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous">'>
+<pre><span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css"</span> <span class="attr">crossorigin</span>=<span class="str">"anonymous"</span><span class="tag">&gt;</span></pre>
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
 
-		<script>$('textarea').one('click',function(){$(this).select();});</script>
-		<script>$('textarea').dblclick(function(){$(this).select();});</script>
+      <div class="install-block">
+        <h3>One palette only</h3>
+        <p>Replace <code>{palette}</code> with one of <code>baseline</code>, <code>elementary</code>, <code>eustasy</code>, <code>flatui</code>, <code>flexoki</code>, <code>goddardhale</code>, <code>howtoelementary</code>, <code>material</code>, or <code>ubuntu</code>.</p>
+        <div class="codeblock" data-copy-src='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous">'>
+<pre><span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/<span class="key">{palette}</span>.min.css"</span> <span class="attr">crossorigin</span>=<span class="str">"anonymous"</span><span class="tag">&gt;</span></pre>
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	</body>
+  <hr>
+
+  <section class="section container" id="usage">
+    <h2><span class="num">02</span>Usage</h2>
+    <p class="section-lede">
+      Every color ships two ways: as a custom property you can pull into your own CSS, and as a utility class you can drop onto any element.
+      Names are kebab-cased and prefixed by their palette &mdash; <code>--flatui-belize-hole</code>, <code>--flexoki-red-600</code>, and so on.
+    </p>
+
+    <div class="usage-grid">
+      <div class="usage-card">
+        <h4>1 — As a CSS custom property</h4>
+        <div class="codeblock" data-copy-src=".cta { background: var(--flatui-belize-hole); color: var(--flatui-clouds); }">
+<pre><span class="key">.cta</span> {
+  background: <span class="attr">var</span>(<span class="str">--flatui-belize-hole</span>);
+  color: <span class="attr">var</span>(<span class="str">--flatui-clouds</span>);
+}</pre>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <p>Use anywhere a color works — gradients, shadows, filters, the lot.</p>
+      </div>
+
+      <div class="usage-card">
+        <h4>2 — As a utility class</h4>
+        <p>Each color is also exposed across nine class prefixes:</p>
+        <div class="class-list">
+          <span class="pill">background-*</span>
+          <span class="pill">color-*</span>
+          <span class="pill">fill-*</span>
+          <span class="pill">border-color-*</span>
+          <span class="pill">stroke-*</span>
+          <span class="pill">outline-color-*</span>
+          <span class="pill">text-decoration-color-*</span>
+          <span class="pill">caret-color-*</span>
+          <span class="pill">accent-color-*</span>
+        </div>
+        <div class="codeblock" style="margin-top:0.75rem" data-copy-src='<button class="background-flatui-belize-hole color-flatui-clouds">Save</button>'>
+<pre><span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="str">"background-flatui-belize-hole color-flatui-clouds"</span><span class="tag">&gt;</span>Save<span class="tag">&lt;/button&gt;</span></pre>
+          <button class="copy-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gamut-note">
+      <span class="ring"><span class="ring-inner"></span></span>
+      <div>
+        <strong>Wider gamut?</strong> All palette values are authored in sRGB hex, but every swatch below also lets you copy as <code>oklch()</code> or <code>color(display-p3 …)</code> — useful on modern displays where the wider gamut lets reds and greens land more vividly. See Josh Comeau's <a href="https://www.joshwcomeau.com/css/color-formats/">A guide to modern CSS colors</a> for the why.
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section container" id="palettes">
+    <h2><span class="num">03</span>Palettes</h2>
+    <p class="section-lede">Hover a swatch to see all the ways you can copy it &mdash; the variable name, utility class, hex, RGB, HSL, OKLCH, or wide-gamut Display&nbsp;P3. Clicking the swatch itself copies whichever format is selected in the toolbar.</p>
+
+    <div class="palette-nav-wrap">
+      <nav class="palette-nav" id="palette-nav"><!-- generated --></nav>
+    </div>
+
+    <div id="palettes-root"><!-- generated --></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <p class="col-title">Colors.css</p>
+      <p>A project by <a href="https://eustasy.org/">eustasy</a>.<br>
+        MIT licensed; free to use anywhere.<br>
+        Palettes credited to their respective creators.</p>
+    </div>
+    <div>
+      <p class="col-title">Project</p>
+      <ul>
+        <li><a href="https://github.com/eustasy/Colors.css">GitHub repository</a></li>
+        <li><a href="https://github.com/eustasy/Colors.css/releases">Releases</a></li>
+        <li><a href="https://github.com/eustasy/Colors.css/blob/master/LICENSE.md">MIT License</a></li>
+        <li><a href="https://www.jsdelivr.com/package/gh/eustasy/Colors.css">jsDelivr</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="col-title">Reading</p>
+      <ul>
+        <li><a href="https://stephango.com/flexoki">Flexoki — Steph Ango</a></li>
+        <li><a href="https://www.joshwcomeau.com/css/color-formats/">CSS color formats — Josh Comeau</a></li>
+        <li><a href="https://bottosson.github.io/posts/oklab/">Oklab — Björn Ottosson</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Copy popover lives at body level so it can float over swatches -->
+<div class="copy-pop" id="copy-pop" role="dialog" aria-label="Copy color">
+  <div class="pop-head">
+    <span class="pop-chip" id="pop-chip"></span>
+    <div>
+      <div class="pop-name" id="pop-name"></div>
+      <div class="pop-sub" id="pop-sub"></div>
+    </div>
+  </div>
+  <div id="pop-rows"></div>
+  <div class="pop-foot">
+    <span id="pop-contrast"></span>
+    <span>click to copy</span>
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/color-utils.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
 </html>
