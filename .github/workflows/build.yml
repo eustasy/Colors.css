@@ -3,7 +3,8 @@ name: Build CSS
 on:
   push:
     branches:
-      - gh-pages
+      - main
+    paths: ["data/*", "utils/*"]
 
 permissions:
   contents: write
