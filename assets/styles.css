@@ -684,17 +684,24 @@ body[data-density="spacious"] .swatch { height: 104px; }
   bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%) translateY(120%);
+  opacity: 0;
+  visibility: hidden;
   background: var(--tx);
   color: var(--paper);
   padding: 0.55rem 1rem;
   border-radius: 99px;
   font-size: 0.85rem;
   box-shadow: var(--shadow-pop);
-  transition: transform .25s ease;
+  transition: transform .25s ease, opacity .25s ease, visibility 0s linear .25s;
   z-index: 200;
   font-family: var(--mono);
 }
-.toast.show { transform: translateX(-50%) translateY(0); }
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: transform .25s ease, opacity .25s ease, visibility 0s;
+}
 
 /* ------- Footer ------- */
 .site-footer {
