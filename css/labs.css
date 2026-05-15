@@ -110,9 +110,12 @@ a {
 
 .display-inline-block { display: inline-block; }
 code.display-inline-block {
+	background: #e8ecef;
+	border-radius: 2px;
 	line-height: 1.4;
-	padding: .35rem .5rem;
+	padding: .2rem .4rem;
 }
+p { line-height: 1.4rem; }
 
 .rounded { border-radius: 2px; }
 
