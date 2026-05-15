@@ -5,11 +5,9 @@ from collections import OrderedDict
 
 #   Step 0. Initialize veriables
 path = os.path.dirname(os.path.abspath(__file__))
-types = ['background', 'color', 'fill', 'border-color', 'stroke', 'outline-color']
-extended_types = ['text-decoration-color', 'caret-color', 'accent-color']
+types = ['background', 'color', 'fill', 'border-color', 'stroke', 'outline-color', 'text-decoration-color', 'caret-color', 'accent-color']
 version = '2.0.9'
 css_all = ''
-css_all_extended = ''
 
 def save_css(path, slug, suffix, css):
     with open(path + '/../' + slug + suffix, 'w+') as outfile:
@@ -50,39 +48,20 @@ for title, slug in index.items():
             # Should look like { color: #f37329; }
             css += ' { ' + type + ': var(--' + slug + '-' + color + '); }\n'
 
-    #   Step 2. d) Create extended CSS (standard + extended types)
-    css_ext = css
-    for type in extended_types:
-        for color, hex in colors.items():
-            color = re.sub('\s+', '-', color).lower()
-            css_ext += '.' + type + '-' + slug + '-' + color
-            css_ext += ' { ' + type + ': var(--' + slug + '-' + color + '); }\n'
-
-    #   Step 2. e) Put data into palette.css files
+    #   Step 2. d) Put data into palette.css files
     css_all += css
-    css_all_extended += css_ext
     css_title = '/*! Colors.css ' + version + ' | ' + title + ' Palette | MIT License | https://github.com/eustasy/colors.css */\n'
-    css_ext_title = '/*! Colors.css ' + version + ' | ' + title + ' Palette (Extended) | MIT License | https://github.com/eustasy/colors.css */\n'
     css_min = css_title + re.sub(r'[\s\n]+', '', css).lower()
-    css_ext_min = css_ext_title + re.sub(r'[\s\n]+', '', css_ext).lower()
     css = css_title + css
-    css_ext = css_ext_title + css_ext
 
     save_css(path, slug, '.css', css)
     save_css(path, slug, '.min.css', css_min)
-    save_css(path, slug, '.extended.css', css_ext)
-    save_css(path, slug, '.extended.min.css', css_ext_min)
 
 #   Step 3. Combine and minify into main files
 slug = 'colors'
 css_all_title = '/*! Colors.css ' + version + ' | All Palettes | MIT License | https://github.com/eustasy/colors.css */\n'
-css_all_ext_title = '/*! Colors.css ' + version + ' | All Palettes (Extended) | MIT License | https://github.com/eustasy/colors.css */\n'
 css_min = css_all_title + re.sub(r'[\s\n]+', '', css_all).lower()
-css_all_ext_min = css_all_ext_title + re.sub(r'[\s\n]+', '', css_all_extended).lower()
 css = css_all_title + css_all
-css_all_extended = css_all_ext_title + css_all_extended
 
 save_css(path, slug, '.css', css)
 save_css(path, slug, '.min.css', css_min)
-save_css(path, slug, '.extended.css', css_all_extended)
-save_css(path, slug, '.extended.min.css', css_all_ext_min)

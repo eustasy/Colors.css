@@ -53,7 +53,7 @@ hr.section-breaker {
 	max-width: 80rem;
 }
 footer {
-	color: #999;
+	color: #666;
 }
 
 /* $Headers */
@@ -71,10 +71,10 @@ h2 {
 	font-weight: 400;
 }
 h1 + .sub-title {
-	margin-top: -1rem;
+	margin-top: 0;
 }
 .sub-title {
-	color: #bbb;
+	color: #777;
 	font-size: 1.2em;
 }
 

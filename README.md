@@ -20,14 +20,6 @@ Replace `{palette}` with one of: `baseline`, `elementary`, `eustasy`, `flatui`, 
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous">`
 
-## Extended palettes
-
-Extended files include everything in the standard files plus `text-decoration-color`, `caret-color`, and `accent-color` classes.
-
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.extended.min.css" crossorigin="anonymous">`
-
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.extended.min.css" crossorigin="anonymous">`
-
 ## Using colors
 
 Each color is available as a CSS custom property and as utility classes:
@@ -38,15 +30,13 @@ var(--flatui-belize-hole)
 ```
 
 ```html
-<!-- Standard utility classes -->
+<!-- Utility classes -->
 <div class="background-flatui-belize-hole">...</div>
 <p class="color-flatui-belize-hole">...</p>
 <svg><path class="fill-flatui-belize-hole" /></svg>
 <div class="border-color-flatui-belize-hole">...</div>
 <svg><path class="stroke-flatui-belize-hole" /></svg>
 <input class="outline-color-flatui-belize-hole">
-
-<!-- Extended utility classes -->
 <p class="text-decoration-color-flatui-belize-hole">...</p>
 <input class="caret-color-flatui-belize-hole">
 <input type="checkbox" class="accent-color-flatui-belize-hole">
