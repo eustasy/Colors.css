@@ -1,0 +1,121 @@
+/* $Default */
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	font-weight: 400;
+	color: #222;
+	background: #fefefe;
+	margin: 0;
+	text-align: center;
+}
+footer {
+	margin: 0 auto;
+	width: 100%;
+}
+footer { padding: 5rem 5rem 3rem; }
+section {
+	display: inline-block;
+	max-width: 80rem;
+	padding: 1rem 0;
+	position: relative;
+	vertical-align: top;
+}
+
+textarea {
+	border: none;
+	display: block;
+	line-height: 2;
+	margin: 0;
+	outline: none;
+	padding: .7rem 1rem;
+	text-align: left;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	resize: vertical;
+	width: 100%;
+}
+textarea.code {
+	background: #2C3e50;
+	color: #fefefe;
+}
+.code {
+	font-family: 'Source Code Pro';
+}
+
+hr {
+	background: #ddd;
+	background: linear-gradient(to right, transparent 0%, #ddd 50%, transparent 100%);
+	border: none;
+	height: 1px;
+	width: 100%;
+}
+hr.section-breaker {
+	margin: 5rem auto;
+	max-width: 80rem;
+}
+footer {
+	color: #999;
+}
+
+/* $Headers */
+h2 {
+	color: #45a9ec;
+}
+
+h1 {
+	color: #3498db;
+	font-size: 3rem;
+	font-weight: 300;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+h1 + .sub-title {
+	margin-top: -1rem;
+}
+.sub-title {
+	color: #bbb;
+	font-size: 1.2em;
+}
+
+/* $Links */
+a {
+	color: inherit;
+	text-decoration: underline;
+	text-decoration-color: #bbb;
+	text-decoration-skip: ink;
+	text-decoration-style: solid;
+	transition: all 300ms ease-in-out;
+}
+
+/* $Buttons */
+.button {
+	border: 1px solid #ccc;
+	box-shadow:
+		0 1px 2px 0 rgba(0,0,0,.14),
+		0 2px 1px -2px rgba(0,0,0,.2),
+		0 1px 3px 0 rgba(0,0,0,.12);
+	cursor: pointer;
+	margin: 2rem 1rem;
+	padding: .7rem 1rem;
+	transition: all 200ms ease-in-out;
+	text-decoration: none;
+}
+.button:hover { opacity: 0.9; }
+.button:active { box-shadow: none; }
+
+/* $Classes */
+.text-left { text-align: left; }
+
+.display-inline-block { display: inline-block; }
+
+.rounded { border-radius: 2px; }
+
+/* $GitHubCorner */
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}
+.github-corner svg{position: absolute; top: 0; border: 0; right: 0;
+	fill: #3498db;
+	color: #fefefe;
+	text-decoration: none;}
+@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
+@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
