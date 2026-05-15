@@ -56,6 +56,13 @@
 	--elementary-bubblegum-500: #de3e80;
 	--elementary-bubblegum-700: #bc245d;
 	--elementary-bubblegum-900: #910e38;
+	--elementary-latte: #cfa25e;
+	--elementary-latte-text: #3d211b;
+	--elementary-latte-100: #efdfc4;
+	--elementary-latte-300: #e7c591;
+	--elementary-latte-500: #cfa25e;
+	--elementary-latte-700: #b6802e;
+	--elementary-latte-900: #804b00;
 	--elementary-cocoa: #715344;
 	--elementary-cocoa-100: #a3907c;
 	--elementary-cocoa-300: #8a715e;
@@ -139,6 +146,13 @@
 .background-elementary-bubblegum-500 { background: var(--elementary-bubblegum-500); }
 .background-elementary-bubblegum-700 { background: var(--elementary-bubblegum-700); }
 .background-elementary-bubblegum-900 { background: var(--elementary-bubblegum-900); }
+.background-elementary-latte { background: var(--elementary-latte); }
+.background-elementary-latte-text { background: var(--elementary-latte-text); }
+.background-elementary-latte-100 { background: var(--elementary-latte-100); }
+.background-elementary-latte-300 { background: var(--elementary-latte-300); }
+.background-elementary-latte-500 { background: var(--elementary-latte-500); }
+.background-elementary-latte-700 { background: var(--elementary-latte-700); }
+.background-elementary-latte-900 { background: var(--elementary-latte-900); }
 .background-elementary-cocoa { background: var(--elementary-cocoa); }
 .background-elementary-cocoa-100 { background: var(--elementary-cocoa-100); }
 .background-elementary-cocoa-300 { background: var(--elementary-cocoa-300); }
@@ -221,6 +235,13 @@
 .color-elementary-bubblegum-500 { color: var(--elementary-bubblegum-500); }
 .color-elementary-bubblegum-700 { color: var(--elementary-bubblegum-700); }
 .color-elementary-bubblegum-900 { color: var(--elementary-bubblegum-900); }
+.color-elementary-latte { color: var(--elementary-latte); }
+.color-elementary-latte-text { color: var(--elementary-latte-text); }
+.color-elementary-latte-100 { color: var(--elementary-latte-100); }
+.color-elementary-latte-300 { color: var(--elementary-latte-300); }
+.color-elementary-latte-500 { color: var(--elementary-latte-500); }
+.color-elementary-latte-700 { color: var(--elementary-latte-700); }
+.color-elementary-latte-900 { color: var(--elementary-latte-900); }
 .color-elementary-cocoa { color: var(--elementary-cocoa); }
 .color-elementary-cocoa-100 { color: var(--elementary-cocoa-100); }
 .color-elementary-cocoa-300 { color: var(--elementary-cocoa-300); }
@@ -303,6 +324,13 @@
 .fill-elementary-bubblegum-500 { fill: var(--elementary-bubblegum-500); }
 .fill-elementary-bubblegum-700 { fill: var(--elementary-bubblegum-700); }
 .fill-elementary-bubblegum-900 { fill: var(--elementary-bubblegum-900); }
+.fill-elementary-latte { fill: var(--elementary-latte); }
+.fill-elementary-latte-text { fill: var(--elementary-latte-text); }
+.fill-elementary-latte-100 { fill: var(--elementary-latte-100); }
+.fill-elementary-latte-300 { fill: var(--elementary-latte-300); }
+.fill-elementary-latte-500 { fill: var(--elementary-latte-500); }
+.fill-elementary-latte-700 { fill: var(--elementary-latte-700); }
+.fill-elementary-latte-900 { fill: var(--elementary-latte-900); }
 .fill-elementary-cocoa { fill: var(--elementary-cocoa); }
 .fill-elementary-cocoa-100 { fill: var(--elementary-cocoa-100); }
 .fill-elementary-cocoa-300 { fill: var(--elementary-cocoa-300); }
@@ -385,6 +413,13 @@
 .border-color-elementary-bubblegum-500 { border-color: var(--elementary-bubblegum-500); }
 .border-color-elementary-bubblegum-700 { border-color: var(--elementary-bubblegum-700); }
 .border-color-elementary-bubblegum-900 { border-color: var(--elementary-bubblegum-900); }
+.border-color-elementary-latte { border-color: var(--elementary-latte); }
+.border-color-elementary-latte-text { border-color: var(--elementary-latte-text); }
+.border-color-elementary-latte-100 { border-color: var(--elementary-latte-100); }
+.border-color-elementary-latte-300 { border-color: var(--elementary-latte-300); }
+.border-color-elementary-latte-500 { border-color: var(--elementary-latte-500); }
+.border-color-elementary-latte-700 { border-color: var(--elementary-latte-700); }
+.border-color-elementary-latte-900 { border-color: var(--elementary-latte-900); }
 .border-color-elementary-cocoa { border-color: var(--elementary-cocoa); }
 .border-color-elementary-cocoa-100 { border-color: var(--elementary-cocoa-100); }
 .border-color-elementary-cocoa-300 { border-color: var(--elementary-cocoa-300); }
@@ -467,6 +502,13 @@
 .stroke-elementary-bubblegum-500 { stroke: var(--elementary-bubblegum-500); }
 .stroke-elementary-bubblegum-700 { stroke: var(--elementary-bubblegum-700); }
 .stroke-elementary-bubblegum-900 { stroke: var(--elementary-bubblegum-900); }
+.stroke-elementary-latte { stroke: var(--elementary-latte); }
+.stroke-elementary-latte-text { stroke: var(--elementary-latte-text); }
+.stroke-elementary-latte-100 { stroke: var(--elementary-latte-100); }
+.stroke-elementary-latte-300 { stroke: var(--elementary-latte-300); }
+.stroke-elementary-latte-500 { stroke: var(--elementary-latte-500); }
+.stroke-elementary-latte-700 { stroke: var(--elementary-latte-700); }
+.stroke-elementary-latte-900 { stroke: var(--elementary-latte-900); }
 .stroke-elementary-cocoa { stroke: var(--elementary-cocoa); }
 .stroke-elementary-cocoa-100 { stroke: var(--elementary-cocoa-100); }
 .stroke-elementary-cocoa-300 { stroke: var(--elementary-cocoa-300); }
@@ -549,6 +591,13 @@
 .outline-color-elementary-bubblegum-500 { outline-color: var(--elementary-bubblegum-500); }
 .outline-color-elementary-bubblegum-700 { outline-color: var(--elementary-bubblegum-700); }
 .outline-color-elementary-bubblegum-900 { outline-color: var(--elementary-bubblegum-900); }
+.outline-color-elementary-latte { outline-color: var(--elementary-latte); }
+.outline-color-elementary-latte-text { outline-color: var(--elementary-latte-text); }
+.outline-color-elementary-latte-100 { outline-color: var(--elementary-latte-100); }
+.outline-color-elementary-latte-300 { outline-color: var(--elementary-latte-300); }
+.outline-color-elementary-latte-500 { outline-color: var(--elementary-latte-500); }
+.outline-color-elementary-latte-700 { outline-color: var(--elementary-latte-700); }
+.outline-color-elementary-latte-900 { outline-color: var(--elementary-latte-900); }
 .outline-color-elementary-cocoa { outline-color: var(--elementary-cocoa); }
 .outline-color-elementary-cocoa-100 { outline-color: var(--elementary-cocoa-100); }
 .outline-color-elementary-cocoa-300 { outline-color: var(--elementary-cocoa-300); }
@@ -631,6 +680,13 @@
 .text-decoration-color-elementary-bubblegum-500 { text-decoration-color: var(--elementary-bubblegum-500); }
 .text-decoration-color-elementary-bubblegum-700 { text-decoration-color: var(--elementary-bubblegum-700); }
 .text-decoration-color-elementary-bubblegum-900 { text-decoration-color: var(--elementary-bubblegum-900); }
+.text-decoration-color-elementary-latte { text-decoration-color: var(--elementary-latte); }
+.text-decoration-color-elementary-latte-text { text-decoration-color: var(--elementary-latte-text); }
+.text-decoration-color-elementary-latte-100 { text-decoration-color: var(--elementary-latte-100); }
+.text-decoration-color-elementary-latte-300 { text-decoration-color: var(--elementary-latte-300); }
+.text-decoration-color-elementary-latte-500 { text-decoration-color: var(--elementary-latte-500); }
+.text-decoration-color-elementary-latte-700 { text-decoration-color: var(--elementary-latte-700); }
+.text-decoration-color-elementary-latte-900 { text-decoration-color: var(--elementary-latte-900); }
 .text-decoration-color-elementary-cocoa { text-decoration-color: var(--elementary-cocoa); }
 .text-decoration-color-elementary-cocoa-100 { text-decoration-color: var(--elementary-cocoa-100); }
 .text-decoration-color-elementary-cocoa-300 { text-decoration-color: var(--elementary-cocoa-300); }
@@ -713,6 +769,13 @@
 .caret-color-elementary-bubblegum-500 { caret-color: var(--elementary-bubblegum-500); }
 .caret-color-elementary-bubblegum-700 { caret-color: var(--elementary-bubblegum-700); }
 .caret-color-elementary-bubblegum-900 { caret-color: var(--elementary-bubblegum-900); }
+.caret-color-elementary-latte { caret-color: var(--elementary-latte); }
+.caret-color-elementary-latte-text { caret-color: var(--elementary-latte-text); }
+.caret-color-elementary-latte-100 { caret-color: var(--elementary-latte-100); }
+.caret-color-elementary-latte-300 { caret-color: var(--elementary-latte-300); }
+.caret-color-elementary-latte-500 { caret-color: var(--elementary-latte-500); }
+.caret-color-elementary-latte-700 { caret-color: var(--elementary-latte-700); }
+.caret-color-elementary-latte-900 { caret-color: var(--elementary-latte-900); }
 .caret-color-elementary-cocoa { caret-color: var(--elementary-cocoa); }
 .caret-color-elementary-cocoa-100 { caret-color: var(--elementary-cocoa-100); }
 .caret-color-elementary-cocoa-300 { caret-color: var(--elementary-cocoa-300); }
@@ -795,6 +858,13 @@
 .accent-color-elementary-bubblegum-500 { accent-color: var(--elementary-bubblegum-500); }
 .accent-color-elementary-bubblegum-700 { accent-color: var(--elementary-bubblegum-700); }
 .accent-color-elementary-bubblegum-900 { accent-color: var(--elementary-bubblegum-900); }
+.accent-color-elementary-latte { accent-color: var(--elementary-latte); }
+.accent-color-elementary-latte-text { accent-color: var(--elementary-latte-text); }
+.accent-color-elementary-latte-100 { accent-color: var(--elementary-latte-100); }
+.accent-color-elementary-latte-300 { accent-color: var(--elementary-latte-300); }
+.accent-color-elementary-latte-500 { accent-color: var(--elementary-latte-500); }
+.accent-color-elementary-latte-700 { accent-color: var(--elementary-latte-700); }
+.accent-color-elementary-latte-900 { accent-color: var(--elementary-latte-900); }
 .accent-color-elementary-cocoa { accent-color: var(--elementary-cocoa); }
 .accent-color-elementary-cocoa-100 { accent-color: var(--elementary-cocoa-100); }
 .accent-color-elementary-cocoa-300 { accent-color: var(--elementary-cocoa-300); }
