@@ -1,6 +1,7 @@
 # Colors.css
 
 [![Build Dist](https://github.com/eustasy/Colors.css/actions/workflows/build.yml/badge.svg)](https://github.com/eustasy/Colors.css/actions/workflows/build.yml)
+[![Normal (CSS/SCSS)](https://github.com/eustasy/Colors.css/actions/workflows/css.yml/badge.svg)](https://github.com/eustasy/Colors.css/actions/workflows/css.yml)
 [![Maintainability](https://qlty.sh/gh/eustasy/projects/Colors.css/maintainability.svg)](https://qlty.sh/gh/eustasy/projects/Colors.css)
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/eustasy/Colors.css/badge?style=rounded)](https://www.jsdelivr.com/package/gh/eustasy/colors.css)
 
