@@ -27,4 +27,4 @@ jobs:
           node-version: lts/*
 
       - name: Lint HTML (html-validate)
-        run: git ls-files -- '*.html' '*.htm' | xargs -r npx --yes html-validate
+        run: git ls-files -- '*.html' '*.htm' | xargs -r npx --yes html-validate --config .qlty/configs/.htmlvalidate.json
