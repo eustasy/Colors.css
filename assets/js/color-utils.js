@@ -2,13 +2,19 @@
 // All functions take/return numbers in 0..1 unless noted.
 
 (function (global) {
-  'use strict';
+  "use strict";
 
-  function clamp(x, a, b) { return Math.min(b, Math.max(a, x)); }
+  function clamp(x, a, b) {
+    return Math.min(b, Math.max(a, x));
+  }
 
   function hexToRgb(hex) {
-    let h = hex.replace('#', '').trim();
-    if (h.length === 3) h = h.split('').map(c => c + c).join('');
+    let h = hex.replace("#", "").trim();
+    if (h.length === 3)
+      h = h
+        .split("")
+        .map((c) => c + c)
+        .join("");
     if (h.length !== 6) return null;
     const n = parseInt(h, 16);
     return {
@@ -27,17 +33,27 @@
   }
 
   function rgbToHsl(c) {
-    const r = c.r, g = c.g, b = c.b;
-    const max = Math.max(r, g, b), min = Math.min(r, g, b);
-    let h = 0, s = 0;
+    const r = c.r,
+      g = c.g,
+      b = c.b;
+    const max = Math.max(r, g, b),
+      min = Math.min(r, g, b);
+    let h = 0,
+      s = 0;
     const l = (max + min) / 2;
     if (max !== min) {
       const d = max - min;
       s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
       switch (max) {
-        case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-        case g: h = (b - r) / d + 2; break;
-        case b: h = (r - g) / d + 4; break;
+        case r:
+          h = (g - b) / d + (g < b ? 6 : 0);
+          break;
+        case g:
+          h = (b - r) / d + 2;
+          break;
+        case b:
+          h = (r - g) / d + 4;
+          break;
       }
       h /= 6;
     }
@@ -61,17 +77,19 @@
     const l = 0.4122214708 * c.r + 0.5363325363 * c.g + 0.0514459929 * c.b;
     const m = 0.2119034982 * c.r + 0.6806995451 * c.g + 0.1073969566 * c.b;
     const s = 0.0883024619 * c.r + 0.2817188376 * c.g + 0.6299787005 * c.b;
-    const l_ = Math.cbrt(l), m_ = Math.cbrt(m), s_ = Math.cbrt(s);
+    const l_ = Math.cbrt(l),
+      m_ = Math.cbrt(m),
+      s_ = Math.cbrt(s);
     return {
-      L: 0.2104542553 * l_ + 0.7936177850 * m_ - 0.0040720468 * s_,
-      a: 1.9779984951 * l_ - 2.4285922050 * m_ + 0.4505937099 * s_,
-      b: 0.0259040371 * l_ + 0.7827717662 * m_ - 0.8086757660 * s_,
+      L: 0.2104542553 * l_ + 0.793617785 * m_ - 0.0040720468 * s_,
+      a: 1.9779984951 * l_ - 2.428592205 * m_ + 0.4505937099 * s_,
+      b: 0.0259040371 * l_ + 0.7827717662 * m_ - 0.808675766 * s_,
     };
   }
 
   function oklabToOklch(lab) {
     const C = Math.sqrt(lab.a * lab.a + lab.b * lab.b);
-    let H = Math.atan2(lab.b, lab.a) * 180 / Math.PI;
+    let H = (Math.atan2(lab.b, lab.a) * 180) / Math.PI;
     if (H < 0) H += 360;
     return { L: lab.L, C: C, H: H };
   }
@@ -80,17 +98,17 @@
   function linearRgbToXyz(c) {
     return {
       x: 0.4124564 * c.r + 0.3575761 * c.g + 0.1804375 * c.b,
-      y: 0.2126729 * c.r + 0.7151522 * c.g + 0.0721750 * c.b,
-      z: 0.0193339 * c.r + 0.1191920 * c.g + 0.9503041 * c.b,
+      y: 0.2126729 * c.r + 0.7151522 * c.g + 0.072175 * c.b,
+      z: 0.0193339 * c.r + 0.119192 * c.g + 0.9503041 * c.b,
     };
   }
 
   // XYZ (D65) -> linear Display-P3
   function xyzToLinearP3(c) {
     return {
-      r:  2.4934969 * c.x - 0.9313836 * c.y - 0.4027108 * c.z,
-      g: -0.8294890 * c.x + 1.7626641 * c.y + 0.0236247 * c.z,
-      b:  0.0358458 * c.x - 0.0761724 * c.y + 0.9568845 * c.z,
+      r: 2.4934969 * c.x - 0.9313836 * c.y - 0.4027108 * c.z,
+      g: -0.829489 * c.x + 1.7626641 * c.y + 0.0236247 * c.z,
+      b: 0.0358458 * c.x - 0.0761724 * c.y + 0.9568845 * c.z,
     };
   }
 
@@ -110,7 +128,9 @@
     return String(f);
   }
 
-  function toHex(hex) { return hex.toUpperCase(); }
+  function toHex(hex) {
+    return hex.toUpperCase();
+  }
 
   function toRgb(hex) {
     const c = rgbTo255(hexToRgb(hex));
@@ -150,13 +170,21 @@
   }
 
   // Pick best foreground (black or white-ish) for a swatch
-  function pickForeground(hex, light = '#FFFCF0', dark = '#100F0F') {
+  function pickForeground(hex, light = "#FFFCF0", dark = "#100F0F") {
     return contrast(hex, dark) >= contrast(hex, light) ? dark : light;
   }
 
   global.ColorUtils = {
-    hexToRgb, rgbTo255, rgbToHsl,
-    toHex, toRgb, toHsl, toOklch, toP3,
-    contrast, relativeLuminance, pickForeground,
+    hexToRgb,
+    rgbTo255,
+    rgbToHsl,
+    toHex,
+    toRgb,
+    toHsl,
+    toOklch,
+    toP3,
+    contrast,
+    relativeLuminance,
+    pickForeground,
   };
 })(window);
