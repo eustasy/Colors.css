@@ -1,7 +1,7 @@
 """Coolors.co palette parser"""
 # https://coolors.co/ed254e-f9dc5c-49c7ab-236084-574d68-f4fffd-32373b"""
-import re
 import json
+import re
 
 def remove_html_tags(text):
     """Remove html tags from a string"""
