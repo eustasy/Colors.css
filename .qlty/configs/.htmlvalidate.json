@@ -1,6 +1,6 @@
 {
   "extends": ["html-validate:recommended"],
   "rules": {
-    "void-style": ["error", { "style": "selfclosing" }]
+    "void-style": ["error", { "style": "omit" }]
   }
 }
