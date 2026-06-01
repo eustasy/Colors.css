@@ -5,3 +5,4 @@
 .qlty/plugin_cachedir
 .qlty/results
 .claude/
+*.pyc

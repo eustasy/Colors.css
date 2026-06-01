@@ -1,6 +1,6 @@
 import json
-import re
 import os
+import re
 from collections import OrderedDict
 
 #   Step 0. Initialize veriables
@@ -14,9 +14,8 @@ def save_css(path, slug, suffix, css):
         outfile.write(css)
 
 #   Step 1. Load _meta.json
-f = open(path + '/../data/_meta.json')
-index = json.load(f, object_pairs_hook=OrderedDict)
-f.close()
+with open(path + '/../data/_meta.json') as f:
+    index = json.load(f, object_pairs_hook=OrderedDict)
 
 #   Step 2. Create individual palette files
 for slug, info in index.items():
@@ -24,9 +23,8 @@ for slug, info in index.items():
     title = info['name']
 
     #   Step 2. a) Load palette data
-    f = open(path + '/../data/' + slug + '.json')
-    colors = json.load(f, object_pairs_hook=OrderedDict)
-    f.close()
+    with open(path + '/../data/' + slug + '.json') as f:
+        colors = json.load(f, object_pairs_hook=OrderedDict)
 
     #   Step 2. b) Create CSS variables for each color
     css += ':root {\n'
@@ -38,7 +36,7 @@ for slug, info in index.items():
 
     #   Step 2. c) Create CSS types for each color
     for type in types:
-        for color, hex in colors.items():
+        for color in colors:
             color = re.sub(r'\s+', '-', color).lower()
             # Should look like .color-elementary-orange
             css += '.' + type + '-' + slug + '-' + color
