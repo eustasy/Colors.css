@@ -16,9 +16,9 @@
   --red:     #AF3029;
   --green:   #66800B;
 
-  --serif: 'Newsreader', 'Iowan Old Style', 'Charter', Georgia, serif;
-  --sans:  'Geist', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --mono:  'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  --serif: 'Newsreader', 'Iowan Old Style', 'Charter', 'Georgia', serif;
+  --sans:  'Geist', system-ui, -apple-system, 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+  --mono:  'JetBrains Mono', 'SF Mono', 'Menlo', 'Consolas', monospace;
 
   --maxw: 1100px;
   --radius: 8px;
@@ -44,6 +44,7 @@
   --shadow-pop: 0 10px 30px -10px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.4);
 }
 
+/* stylelint-disable-next-line selector-max-universal -- global box-sizing reset needs the universal selector */
 * { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; }
@@ -55,7 +56,7 @@ body {
   color: var(--tx);
   background: var(--paper);
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
 }
 
 a {
@@ -83,6 +84,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   padding: 0.75rem max(1.25rem, calc((100vw - var(--maxw)) / 2));
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: saturate(160%) blur(8px);
+  /* stylelint-disable-next-line property-no-vendor-prefix -- Safari <18 / iOS need the prefix for backdrop-filter */
   -webkit-backdrop-filter: saturate(160%) blur(8px);
   border-bottom: 1px solid var(--ui-2);
 }
@@ -187,7 +189,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   font-size: clamp(3rem, 7vw, 5rem);
   line-height: 1;
   margin: 0 0 1rem;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
 }
 .hero h1 em {
   font-style: italic;
@@ -246,7 +248,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   font-family: var(--serif);
   font-weight: 500;
   font-size: 1.9rem;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   margin: 0 0 0.4rem;
 }
 .section > h2 .num {
@@ -398,6 +400,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   z-index: 40;
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: saturate(160%) blur(8px);
+  /* stylelint-disable-next-line property-no-vendor-prefix -- Safari <18 / iOS need the prefix for backdrop-filter */
   -webkit-backdrop-filter: saturate(160%) blur(8px);
   border-bottom: 1px solid var(--ui-2);
   margin: 0 -1.25rem 2rem;
@@ -447,7 +450,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   font-family: var(--serif);
   font-size: 2.1rem;
   font-weight: 500;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   margin: 0;
   line-height: 1.1;
 }
@@ -566,7 +569,7 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   font-family: var(--mono);
   font-size: 0.7rem;
   font-weight: 500;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   opacity: 0.92;
   line-height: 1.2;
   word-break: break-word;

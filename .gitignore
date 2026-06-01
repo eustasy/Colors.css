@@ -6,3 +6,5 @@
 .qlty/results
 .claude/
 *.pyc
+.ruff_cache/
+__pycache__/
