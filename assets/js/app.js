@@ -409,10 +409,6 @@
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") hidePop(0);
-      if (e.key === "/" && document.activeElement.tagName !== "INPUT") {
-        e.preventDefault();
-        $("#search").focus();
-      }
     });
 
     // Codeblock copy buttons
@@ -462,13 +458,8 @@
     if (savedFmt && [...fs.options].some((o) => o.value === savedFmt)) fs.value = savedFmt;
     fs.addEventListener("change", () => localStorage.setItem("colorscss-format", fs.value));
 
-    // Search
-    const search = $("#search");
-    let searchTimer = null;
-    search.addEventListener("input", () => {
-      clearTimeout(searchTimer);
-      searchTimer = setTimeout(() => applySearch(search.value), 80);
-    });
+    // Search (extracted to search.js — operates on the rendered DOM)
+    window.ColorSearch.wire($("#search"));
 
     // Palette nav scrollspy — pick the section whose top is most recently above the threshold
     const navLinks = $$("#palette-nav a");
@@ -499,38 +490,6 @@
       { passive: true },
     );
     updateActive();
-  }
-
-  // ---------- Search ----------
-  function applySearch(q) {
-    q = q.trim().toLowerCase();
-    const palettes = $$(".palette");
-    if (!q) {
-      palettes.forEach((p) => {
-        p.classList.remove("hidden");
-        $$(".family", p).forEach((f) => f.classList.remove("hidden"));
-        $$(".swatch", p).forEach((s) => s.classList.remove("hidden"));
-      });
-      return;
-    }
-    for (const p of palettes) {
-      const slug = p.dataset.slug;
-      let pmatch = slug.includes(q) || paletteDisplayName(slug).toLowerCase().includes(q);
-      let anyFamilyVisible = false;
-      for (const fam of $$(".family", p)) {
-        const famName = (fam.dataset.family || "").toLowerCase();
-        const famMatch = pmatch || famName.includes(q);
-        let anySwatch = false;
-        for (const sw of $$(".swatch", fam)) {
-          const hit = pmatch || famMatch || sw.dataset.name.toLowerCase().includes(q) || sw.dataset.hex.toLowerCase().includes(q);
-          sw.classList.toggle("hidden", !hit);
-          if (hit) anySwatch = true;
-        }
-        fam.classList.toggle("hidden", !anySwatch);
-        if (anySwatch) anyFamilyVisible = true;
-      }
-      p.classList.toggle("hidden", !anyFamilyVisible);
-    }
   }
 
   // ---------- Page chrome that tracks the palette set ----------
@@ -566,9 +525,6 @@
   function renderChrome() {
     const slugs = Object.values(index);
     const n = slugs.length;
-
-    const search = $("#search");
-    if (search) search.placeholder = `Search ${n} palettes…`;
 
     $$("[data-palette-count-word]").forEach((el) => {
       el.textContent = numberWord(n);
