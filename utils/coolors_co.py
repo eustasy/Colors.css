@@ -28,5 +28,5 @@ for hex in hexes:
     color_hex = '#' + hex
     colors[color_title] = color_hex
 
-colors_json = json.dumps(colors, indent=4, sort_keys=True)
+colors_json = json.dumps(colors, indent=2, sort_keys=True)
 print(colors_json)
