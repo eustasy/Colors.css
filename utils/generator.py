@@ -12,7 +12,6 @@ css_all = ''
 def save_css(path, slug, suffix, css):
     with open(path + '/../' + slug + suffix, 'w+') as outfile:
         outfile.write(css)
-    
 
 #   Step 1. Load _meta.json
 f = open(path + '/../data/_meta.json')
