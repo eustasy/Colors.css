@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Colors.css — a collection of CSS color palettes by eustasy</title>
 <meta name="description" content="Colors.css is a collection of CSS color palettes available as custom properties and utility classes. Browse Flexoki, Material, Ubuntu, elementary, and more — copy any value as hex, rgb, hsl, oklch, or display-p3.">
-<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-<link rel="shortcut icon" href="assets/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Colors.css" />
-<link rel="manifest" href="assets/site.webmanifest" />
+<link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Colors.css">
+<link rel="manifest" href="assets/site.webmanifest">
 <link rel="stylesheet" href="assets/styles.css">
 <script>
   // Theme bootstrap (avoid FOUC)
@@ -25,7 +25,7 @@
 
 <header class="site-header">
   <a class="brand" href="#top">Colors<span class="dot">.</span>css</a>
-  <nav>
+  <nav aria-label="Primary">
     <a href="#install">Install</a>
     <a href="#usage">Usage</a>
     <a href="#palettes">Palettes</a>
@@ -47,7 +47,7 @@
       <option value="oklch">Click copies&nbsp;·&nbsp;OKLCH</option>
       <option value="p3">Click copies&nbsp;·&nbsp;Display-P3</option>
     </select>
-    <button class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+    <button type="button" class="theme-toggle" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 3v1M12 20v1M3 12h1M20 12h1M5.6 5.6l.7.7M17.7 17.7l.7.7M5.6 18.4l.7-.7M17.7 6.3l.7-.7"/>
         <circle cx="12" cy="12" r="4"/>
@@ -89,7 +89,7 @@
         <h3>Everything · all <span data-palette-count-word>nine</span> palettes</h3>
         <div class="codeblock" data-copy-src='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css" crossorigin="anonymous">'>
 <pre><span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/colors.min.css"</span> <span class="attr">crossorigin</span>=<span class="str">"anonymous"</span><span class="tag">&gt;</span></pre>
-          <button class="copy-btn">Copy</button>
+          <button type="button" class="copy-btn">Copy</button>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
         <p>Replace <code>{palette}</code> with one of <span data-palette-slugs><code>baseline</code>, <code>elementary</code>, <code>flatui</code>, <code>flexoki</code>, <code>goddardhale</code>, <code>material</code>, or <code>ubuntu</code></span>.</p>
         <div class="codeblock" data-copy-src='<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous">'>
 <pre><span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="str">"stylesheet"</span> <span class="attr">href</span>=<span class="str">"https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/<span class="key">{palette}</span>.min.css"</span> <span class="attr">crossorigin</span>=<span class="str">"anonymous"</span><span class="tag">&gt;</span></pre>
-          <button class="copy-btn">Copy</button>
+          <button type="button" class="copy-btn">Copy</button>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
   background: <span class="attr">var</span>(<span class="str">--flatui-belize-hole</span>);
   color: <span class="attr">var</span>(<span class="str">--flatui-clouds</span>);
 }</pre>
-          <button class="copy-btn">Copy</button>
+          <button type="button" class="copy-btn">Copy</button>
         </div>
         <p>Use anywhere a color works — gradients, shadows, filters, the lot.</p>
       </div>
@@ -140,9 +140,9 @@
           <span class="pill">caret-color-*</span>
           <span class="pill">accent-color-*</span>
         </div>
-        <div class="codeblock" style="margin-top:0.75rem" data-copy-src='<button class="background-flatui-belize-hole color-flatui-clouds">Save</button>'>
+        <div class="codeblock" data-copy-src='<button class="background-flatui-belize-hole color-flatui-clouds">Save</button>'>
 <pre><span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="str">"background-flatui-belize-hole color-flatui-clouds"</span><span class="tag">&gt;</span>Save<span class="tag">&lt;/button&gt;</span></pre>
-          <button class="copy-btn">Copy</button>
+          <button type="button" class="copy-btn">Copy</button>
         </div>
       </div>
     </div>
@@ -162,7 +162,7 @@
     <p class="section-lede">Hover a swatch to see all the ways you can copy it &mdash; the variable name, utility class, hex, RGB, HSL, OKLCH, or wide-gamut Display&nbsp;P3. Clicking the swatch itself copies whichever format is selected in the toolbar.</p>
 
     <div class="palette-nav-wrap">
-      <nav class="palette-nav" id="palette-nav"><!-- generated --></nav>
+      <nav class="palette-nav" id="palette-nav" aria-label="Palettes"><!-- generated --></nav>
     </div>
 
     <div id="palettes-root"><!-- generated --></div>

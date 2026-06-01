@@ -361,6 +361,9 @@ hr { border: 0; border-top: 1px solid var(--ui-2); margin: 4rem 0; }
   flex-wrap: wrap;
   gap: 0.3rem;
 }
+.usage-card .class-list + .codeblock {
+  margin-top: 0.75rem;
+}
 .usage-card .pill {
   font-family: var(--mono);
   font-size: 0.72rem;
