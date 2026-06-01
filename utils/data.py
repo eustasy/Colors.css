@@ -1,4 +1,4 @@
-# Builds assets/js/data.js — the dataset the index page renders from.
+# Builds assets/js/data.min.js — the dataset the index page renders from.
 # Kept separate from generator.py (which builds the CSS files) so the two
 # build steps can run and be reasoned about independently.
 
@@ -9,7 +9,7 @@ from collections import OrderedDict
 #   Step 0. Resolve paths
 path = os.path.dirname(os.path.abspath(__file__))
 data_dir = os.path.join(path, "..", "data")
-out_file = os.path.join(path, "..", "assets", "js", "data.js")
+out_file = os.path.join(path, "..", "assets", "js", "data.min.js")
 
 
 def load_json(name):
@@ -34,10 +34,10 @@ for slug, info in meta_src.items():
         ]
     )
 
-#   Step 3. Write window.COLORS_DATA to assets/js/data.js
+#   Step 3. Write window.COLORS_DATA to assets/js/data.min.js
 data = OrderedDict([("index", index), ("palettes", palettes), ("meta", meta)])
 payload = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
 with open(out_file, "w+", encoding="utf-8") as outfile:
     outfile.write("window.COLORS_DATA = " + payload + ";\n")
 
-print("Built data.js from " + str(len(palettes)) + " palettes.")
+print("Built data.min.js from " + str(len(palettes)) + " palettes.")
