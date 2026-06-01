@@ -1,0 +1,39 @@
+# eustasy/.Normal 4.0beta8
+name: Normal (Python)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["**.py"]
+  pull_request:
+    branches: [main]
+    paths: ["**.py"]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Lint + format
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - uses: qltysh/qlty-action/install@a19242102d17e497f437d7466aa01b528537e899 # v2.2.0
+
+      - name: Lint (ruff)
+        run: qlty check --all --no-formatters --filter=ruff
+
+      - name: Format check (ruff)
+        run: qlty check --all --filter=ruff
