@@ -25,7 +25,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
+          #cache: npm
 
       - uses: qltysh/qlty-action/install@a19242102d17e497f437d7466aa01b528537e899 # v2.2.0
 
