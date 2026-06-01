@@ -337,7 +337,7 @@
     const ta = document.createElement('textarea');
     ta.value = text; ta.style.position = 'fixed'; ta.style.top = '-1000px';
     document.body.appendChild(ta); ta.select();
-    try { document.execCommand('copy'); } catch (e) {}
+    try { document.execCommand('copy'); } catch {}
     document.body.removeChild(ta);
   }
 
