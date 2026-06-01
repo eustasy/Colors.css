@@ -174,7 +174,13 @@
     return contrast(hex, dark) >= contrast(hex, light) ? dark : light;
   }
 
+  // Is this a usable hex color (3 or 6 digits, optional #)?
+  function isHex(s) {
+    return /^#?[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$/.test(String(s || "").trim());
+  }
+
   global.ColorUtils = {
+    isHex,
     hexToRgb,
     rgbTo255,
     rgbToHsl,

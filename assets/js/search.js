@@ -19,6 +19,29 @@
     return slug;
   }
 
+  // Show/hide each swatch in a family; returns whether any stayed visible.
+  function filterSwatches(fam, q, famMatch) {
+    let any = false;
+    for (const sw of $$(".swatch", fam)) {
+      const hit = famMatch || sw.dataset.name.toLowerCase().includes(q) || sw.dataset.hex.toLowerCase().includes(q);
+      sw.classList.toggle("hidden", !hit);
+      if (hit) any = true;
+    }
+    return any;
+  }
+
+  // Show/hide each family in a palette; returns whether any stayed visible.
+  function filterFamilies(p, q, pmatch) {
+    let any = false;
+    for (const fam of $$(".family", p)) {
+      const famMatch = pmatch || (fam.dataset.family || "").toLowerCase().includes(q);
+      const visible = filterSwatches(fam, q, famMatch);
+      fam.classList.toggle("hidden", !visible);
+      if (visible) any = true;
+    }
+    return any;
+  }
+
   // Filter the rendered palettes/families/swatches against the query by toggling
   // `.hidden`. An empty query restores everything.
   function apply(q) {
@@ -33,22 +56,8 @@
       return;
     }
     for (const p of palettes) {
-      const slug = p.dataset.slug;
-      let pmatch = slug.includes(q) || displayName(slug).toLowerCase().includes(q);
-      let anyFamilyVisible = false;
-      for (const fam of $$(".family", p)) {
-        const famName = (fam.dataset.family || "").toLowerCase();
-        const famMatch = pmatch || famName.includes(q);
-        let anySwatch = false;
-        for (const sw of $$(".swatch", fam)) {
-          const hit = pmatch || famMatch || sw.dataset.name.toLowerCase().includes(q) || sw.dataset.hex.toLowerCase().includes(q);
-          sw.classList.toggle("hidden", !hit);
-          if (hit) anySwatch = true;
-        }
-        fam.classList.toggle("hidden", !anySwatch);
-        if (anySwatch) anyFamilyVisible = true;
-      }
-      p.classList.toggle("hidden", !anyFamilyVisible);
+      const pmatch = p.dataset.slug.includes(q) || displayName(p.dataset.slug).toLowerCase().includes(q);
+      p.classList.toggle("hidden", !filterFamilies(p, q, pmatch));
     }
   }
 
