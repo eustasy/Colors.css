@@ -1,14 +1,21 @@
-# eustasy/.Normal 4.0beta8
-name: Normal (Python)
-
+# eustasy/.Normal 4.0beta13
+name: "Normal: Python"
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["**.py"]
+    paths:
+      - "**.py"
+      - ".github/workflows/python.yml"
+      - ".qlty/configs/ruff.toml"
+      - ".qlty/qlty.toml"
   pull_request:
     branches: [main]
-    paths: ["**.py"]
+    paths:
+      - "**.py"
+      - ".github/workflows/python.yml"
+      - ".qlty/configs/ruff.toml"
+      - ".qlty/qlty.toml"
 
 permissions:
   contents: read
@@ -26,14 +33,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/setup-python@v7
+      - uses: eustasy/.normal/python@v4
         with:
           python-version: ${{ matrix.python-version }}
-
-      - uses: qltysh/qlty-action/install@08a0a862c159eae9b9003081da6663d96efef637 # v2.3.0
-
-      - name: Lint (ruff)
-        run: qlty check --all --no-formatters --filter=ruff
-
-      - name: Format check (ruff)
-        run: qlty check --all --filter=ruff

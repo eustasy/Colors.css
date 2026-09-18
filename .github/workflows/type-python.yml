@@ -1,0 +1,44 @@
+# eustasy/.Normal 4.0beta13
+name: "Type: Python"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - "mypy.ini"
+      - "setup.cfg"
+      - ".github/workflows/type-python.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.py"
+      - "requirements.txt"
+      - "pyproject.toml"
+      - "mypy.ini"
+      - "setup.cfg"
+      - ".github/workflows/type-python.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  type-python:
+    # Remove the `if: false` below to activate this workflow.
+    if: false
+    name: mypy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: eustasy/.normal/python/setup@v4
+        with:
+          python-version: "3.13"
+          install-command: pip install -r requirements.txt && pip install mypy
+
+      - name: Typecheck (mypy)
+        run: mypy .
