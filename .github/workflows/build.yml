@@ -35,6 +35,7 @@ jobs:
         git config --global user.name "actions"
         git checkout main
         git add .
+        # shellcheck disable=SC2015  # intentional: nothing to commit must not fail the job
         git commit -m "Automatic build from data" && git push --set-upstream origin main || true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
