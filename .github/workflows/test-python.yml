@@ -1,4 +1,4 @@
-# eustasy/.Normal 4.0beta16
+# eustasy/.Normal 5.0
 name: "Test: Python"
 on:
   workflow_dispatch:
@@ -37,20 +37,20 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11", "3.12", "3.13"]
+        python-version: ["3.11", "3.12", "3.13", "3.14", "3.15"]
     steps:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
 
-      - uses: eustasy/.normal/python/setup@v4
+      - uses: eustasy/.normal/python/setup@v5
         with:
           python-version: ${{ matrix.python-version }}
           install-command: pip install -r requirements.txt
 
       # Insert project-specific steps here — fixtures, config files, migrations.
 
-      - uses: eustasy/.normal/python/test@v4
+      - uses: eustasy/.normal/python/test@v5
         with:
           coverage-token: ${{ secrets.QLTY_COVERAGE_TOKEN }}
-          upload: ${{ matrix.python-version == '3.13' }}
+          upload: ${{ matrix.python-version == '3.14' }}
