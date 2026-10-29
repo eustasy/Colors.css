@@ -20,10 +20,10 @@ jobs:
       uses: actions/checkout@v7
       with:
         persist-credentials: false
-    - name: Set up Python 3.8
+    - name: Set up Python 3.14
       uses: actions/setup-python@v7
       with:
-        python-version: 3.8
+        python-version: "3.14"
     - name: Build CSS from data
       run: python utils/generator.py
     - name: Build index data from data
