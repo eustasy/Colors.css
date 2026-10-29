@@ -14,7 +14,7 @@ _Auto updated on [JSDelivr](https://www.jsdelivr.com/package/gh/eustasy/colors.c
 
 ## Individual palettes
 
-Replace `{palette}` with one of: `baseline`, `elementary`, `eustasy`, `flatui`, `flexoki`, `goddardhale`, `howtoelementary`, `material`, `ubuntu`
+Replace `{palette}` with one of: `baseline`, `elementary`, `flatui`, `flexoki`, `goddardhale`, `material`, `ubuntu`
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/{palette}.min.css" crossorigin="anonymous">`
 
