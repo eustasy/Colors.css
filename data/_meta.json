@@ -22,11 +22,8 @@
   },
   "goddardhale": {
     "name": "Goddard & Hale",
-    "description": "Lewis Goddard's personal palette — five accent hues plus warm neutrals, expanded into 20 perceptually-graded shades.",
-    "source": {
-      "label": "Lewis Goddard",
-      "url": "https://lewisgoddard.com/"
-    }
+    "description": "The Goddard & Hale corporate palette — five accent hues plus warm neutrals, expanded into 20 perceptually-graded shades.",
+    "source": null
   },
   "flexoki": {
     "name": "Flexoki",
