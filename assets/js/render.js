@@ -115,7 +115,7 @@
     header.className = "palette-header"
     const embedSrc = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eustasy/Colors.css@2/${slug}.min.css" crossorigin="anonymous">`
     const families = groups.length > 1 ? ` · ${groups.filter((g) => g.family).length} families` : ""
-    const source = m.source ? ` <a href="${m.source.url}">${escapeHtml(m.source.label)} ↗</a>` : ""
+    const source = m.source ? ` <a href="${escapeAttr(m.source.url)}">${escapeHtml(m.source.label)} ↗</a>` : ""
     const desc = m.description ? `<p class="palette-desc">${escapeHtml(m.description)}${source}</p>` : ""
     header.innerHTML = `
       <div class="palette-title">

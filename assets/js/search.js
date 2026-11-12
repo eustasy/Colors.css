@@ -1,6 +1,6 @@
 // Colors.css site — palette/colour search filter.
 //
-// Self-contained: it works off the rendered-DOM contract the app.js renderer
+// Self-contained: it works off the rendered-DOM contract that render.js
 // emits — .palette[data-slug], .family[data-family], .swatch[data-name][data-hex]
 // — and toggles a `.hidden` class. It reads window.COLORS_DATA only for palette
 // display names, so it shares no state with the rest of app.js.
