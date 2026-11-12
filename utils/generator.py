@@ -3,7 +3,7 @@ import os
 import re
 from collections import OrderedDict
 
-#   Step 0. Initialize veriables
+#   Step 0. Initialize variables
 path = os.path.dirname(os.path.abspath(__file__))
 types = ["background", "color", "fill", "border-color", "stroke", "outline-color", "text-decoration-color", "caret-color", "accent-color"]
 version = "2.1.2"

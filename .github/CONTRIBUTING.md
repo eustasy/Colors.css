@@ -1,36 +1,30 @@
 ## Contributing
 
-### Code Style & Repository Structure
+### Repository structure
 
-#### Data (.json)
+#### Data (`data/`)
 
-- Data is stored in the `data` folder.
-- Data is stored in the `json` format.
-- New data files for palettes must be added to `data/index.json` in the format: `"Palette Title": palette-slug,`
+- One JSON file per palette, `data/{slug}.json`, mapping color names to hex values.
+- `data/_meta.json` lists every palette that is built: its display name, description and source. A palette is only built if it is listed there.
 
-#### Python (.py)
+#### Build scripts (`utils/`)
 
-- Utilities go in `utils`
-- Follow Pythons own style guidelines.
+- `utils/generator.py` builds `{slug}.css`, `{slug}.min.css`, `colors.css` and `colors.min.css` in the repository root.
+- `utils/data.py` builds `assets/js/data.min.js`, which the index page renders from.
+- `utils/coolors_co.py` is a helper for turning a coolors.co shade ramp into palette JSON.
+- The `build.yml` workflow runs both build scripts and commits the output whenever `data/` or `utils/` change on `main`, so do not edit the generated CSS or `data.min.js` by hand.
 
-#### CSS (.css)
+#### Site (`index.html`, `assets/`)
 
-- Non-repository CSS files go in the `css` folder.
-- Color.css files go in the root folder.
+- `index.html` and `assets/styles.css` are the documentation page.
+- `assets/js/` holds the page's vanilla JavaScript; there are no runtime dependencies.
 
-#### JavaScript (.js)
+#### Style
 
-- JavaScript files go in the `js` folder.
-- jQuery is included on the documentation page, but may be removed in the future.
-- Vanilla JavaScript is preferred.
+- Linting and formatting come from [.normal](https://github.com/eustasy/.normal); run `qlty check` and `qlty fmt` locally.
 
-#### Markdown (.md)
+### Releases
 
-- Markdown styles are controlled by `.mdlrc` and `.mdlrc.style.rb`
-
-### Releases and Updates
-
-1. Update the version variable in `utils/generator.py`
-2. Wait for automatic update of CSS with new version number.
-3. Tag a release on GitHub in the normal way (semantic versioning please).
-4. Update documentation of embed links to point to new release.
+1. Update `version` in `utils/generator.py` and push; the build workflow regenerates the CSS headers.
+2. Tag a release on GitHub using semantic versioning (`2.1.2`, no leading `v`).
+3. jsDelivr picks up the new tag automatically; the `@2` links need no change within the major.
